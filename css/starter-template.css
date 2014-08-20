@@ -11,7 +11,7 @@ body
 
 #intro
 {
-	background-image: url('wics-logo-background.png');
+	/*background-image: url('wics-logo-background.png');*/
 	height: 475px;
 }
 
@@ -32,21 +32,22 @@ body
 	max-width: 10 px;	
 }
 
-.navlink
+.navbar .nav > li > a
 {
 	font-size: 18px;
 	font-weight: 900;
 	color: white;
 	float: left;
 	letter-spacing: 1px;
-	margin-right: 10px;
-	margin-left: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	padding: 5px;
+	/*height: 40px;*/
 }
 
-.navbar a:hover
+.navbar .nav > li > a:hover, .navbar-nav > .active > a:hover
 {
 	display: block;
 	background-color: white;
@@ -54,13 +55,13 @@ body
 	text-decoration: none;
 }
 
-.navbar div ul
+.navbar .nav div ul
 {
 	display: table;
 	list-style: none;
 }
 
-.navbar div ul li 
+.navbar .nav div ul li 
 {
 	display: table-cell;
 	text-align: center;
