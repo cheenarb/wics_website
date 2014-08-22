@@ -1,156 +1,369 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!--link rel="icon" href="../../favicon.ico"-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stanford Women in Computer Science">
+  <meta name="author" content="">
+  <!--link rel="icon" href="../../favicon.ico"-->
 
-    <title>Stanford WiCS</title>
+  <title>Stanford WiCS</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
-    <!-- Custom styles for this template -->
-    <link href="css/starter-template.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="css/bootstrap-theme.css" rel = "stylesheet"> -->
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+  <!-- Custom styles for this template -->
+  <link href="css/starter-template.css" rel="stylesheet">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <script src="js/ie-emulation-modes-warning.js"></script>
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="js/ie10-viewport-bug-workaround.js"></script>
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+      <![endif]-->
+    </head>
 
-  <body>
+    <body> 
 
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+      <div class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-header">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class = "navbar-brand" href = "#"> WiCS </a>
+          </div>
 
-    <div class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-header">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class = "navbar-brand" href = "#"> WiCS (logo here) </a>
+          <div class = "collapse navbar-collapse" id = "main-header">
+            <ul class = "nav navbar-nav">
+              <li><a href="#about" >About</a></li>
+              <li><a href="#board">Board</a></li>
+              <li><a href="#events" >Events</a></li>
+              <li><a href="#industry" >Industry</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#resources">Resources</a></li>
+                  <li><a href="#campus-resources">Campus Resources</a></li>
+                  <li><a href="#scholarships">Scholarships</a></li>
+                  <li><a href="#workshops">Workshops and Conferences</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div>
+
+
+      <div class = "jumbotron" id = "intro">
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h1 class="featurette-heading">Women in Computer Science <span class="text-muted">Stanford University</span></h1>
+            <h2 class = "text-muted"> Welcome! </h2>
+            <p class="lead" id = "welcome-text">WiCS is a student organization within Stanford University. Our purpose is to
+              support and promote women in Computer Science by encouraging discussion and raising awareness
+              of the issues they face. WiCS serves to bring together women who share common interests, concerns,
+              and ambitions, both inside and outside of the CS context. </p>
+
+              <p class = "lead">
+                Please
+                <a href = "mailto:wics-board@lists.stanford.edu" id = "emailPopover" data-placement="top" data-trigger = "hover" rel = "popover">
+                  e-mail us
+                </a>
+                with any questions or comments, or if you'd
+                like to get involved! 
+              </p>
+              <script type = "text/javascript"> 
+              $("#emailPopover").popover({content: 'wics-board AT lists DOT stanford DOT edu'});
+              </script>
+
+              <p class = "lead">
+                <a href= "https://mailman.stanford.edu/mailman/listinfo/wics_announce" target="_blank" class="btn btn-lg btn-default">
+                  Subscribe </a>
+                  to our main mailing list. 
+                </p>
+
+                <p class = "lead">
+                  <a href= "https://mailman.stanford.edu/mailman/listinfo/wics-recruiting" target="_blank" class="btn btn-lg btn-default">
+                    Subscribe </a>
+                    to our mailing list about industry opportunities. 
+                  </p>
+
+                </div>
+                <div class="col-md-5">
+                  <img class="featurette-image img-responsive" src="img/wics-logo-500px.png" alt="WiCS logo">
+                </div>
+              </div>
+
+            </div>
+
+
+            <hr class="featurette-divider">
+
+            <div class="jumbotron" id = "about">
+
+              <div class="row featurette">
+                <div class="col-md-5">
+                  <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                </div>
+                <div class="col-md-7">
+                  <h2 class="featurette-heading">About</h2>
+                  <h3 class = "text-muted">Mission Statement </h3>
+                  <div class="lead">
+                    At WiCS we hope to achieve three broad goals:
+                    <ol>
+                      <li> Raise awareness about issues faced by women in computer science </li>
+                      <li> Provide aspiring computer science professionals with resources and mentorship </li>
+                      <li> Promote diversity by encouraging women to consider computer science </li>
+                    </ol>
+                    <p> By building a community of women who enjoy computer science, we hope to provide an outlet for women to connect with one another, share and receive advice, and discuss what is going on in the field </p>
+                  </div>
+                  <h3 class = "text-muted">Activities </h3>
+                  <div class = "lead">
+                    <ul>
+                      <li> <i> Panel discussions </i> with women in industry and senior students (topics include "What I did Last Summer", "Rock Your Internship", work-life balance, interviewing, etc.) </li>
+                      <li> <i> Talks </i> by distinguished female leaders </li>
+                      <li> <i> Social events </i> for members with technology companies, faculty, and other women in the field </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- /.container -->
+
+            <hr class="featurette-divider">
+
+            <div class="jumbotron" id = "board">
+
+             <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading">2014-15 Board</h2>
+              </div>
+            </div>
+            <br></br>
+            <br></br>
+
+            <div class = "container-fluid">
+             <div class="row">
+              <div class="col-xs-6 col-md-4">
+                <img class="img-rounded" src="img/taraBa.jpg" alt="Tara Balakrishnan" style="width: 140px; height: 198px;">
+                <h2>Tara Balakrishnan</h2>
+                <p>Co-President</p>
+                <br></br>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-xs-6 col-md-4">
+                <img class="img-rounded" src="img/emilyTa.jpg" alt="Emily Tang" style="width: 140px; height: 198px;">
+                <h2>Emily Tang</h2>
+                <p>Co-President</p>
+                <br></br>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-xs-6 col-md-4">
+                <img class="img-rounded" src="img/amy.jpg" alt="Amy Nguyen" style="width: 140px; height: 198px;">
+                <h2>Amy Nguyen</h2>
+                <p>Vice President</p>
+                <br></br>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-xs-6 col-md-4">
+                <img class="img-rounded" src="img/ishita.jpg" alt="Ishita Prasad" style="width: 140px; height: 198px;">
+                <h2>Ishita Prasad</h2>
+                <p>Secretary</p>
+                <br></br>
+              </div><!-- /.col-lg-3 -->
+              <div class="col-xs-6 col-md-4">
+                <img class="img-rounded" src="img/andrew.jpg" alt="Andrew Molina" style="width: 140px; height: 198px;">
+                <h2>Andrew Molina</h2>
+                <p>Industry Relations Coordinator</p>
+                <br></br>
+              </div><!-- /.col-lg-3 -->
+              <div class="col-xs-6 col-md-4">
+                <img class="img-rounded" src="img/jipark.jpg" alt="Ji Park" style="width: 140px; height: 198px;">
+                <h2>Ji Park</h2>
+                <p>Financial Officer</p>
+                <br></br>
+              </div><!-- /.col-lg-3 -->
+              <div class="col-xs-6 col-md-4">
+                <img class="img-rounded" src="img/cheenar.jpg" alt="Cheenar Banerjee" style="width: 140px; height: 198px;">
+                <h2>Cheenar Banerjee</h2>
+                <p>Webmistress</p>
+                <br></br>
+              </div><!-- /.col-lg-3 -->
+              <div class="col-xs-6 col-md-4">
+                <img class="img-rounded" src="img/daeun.jpg" alt="DaEun Kim" style="width: 140px; height: 198px;">
+                <h2>DaEun Kim</h2>
+                <p>Undergraduate Representative</p>
+                <br></br>
+              </div><!-- /.col-lg-2 -->
+              <div class="col-xs-6 col-md-4">
+                <img class="img-rounded" src="img/irene.jpg" alt="Irene Kaplow" style="width: 140px; height: 198px;">
+                <h2>Irene Kaplow</h2>
+                <p>Graduate Representative</p>
+                <br></br>
+              </div><!-- /.col-lg-2 -->
+              <div class="col-xs-6 col-md-4">
+                <img class="img-rounded" src="img/maya.jpg" alt="Maya Balakrishnan" style="width: 140px; height: 198px;">
+                <h2>Maya Balakrishnan</h2>
+                <p>Board Member at Large</p>
+                <br></br>
+              </div><!-- /.col-lg-3 -->
+              <div class="col-xs-6 col-md-4">
+                <img class="img-rounded" src="img/theodora.jpg" alt="Theodora Chu" style="width: 140px; height: 198px;">
+                <h2>Theodora Chu</h2>
+                <p>Board Member at Large</p>
+                <br></br>
+              </div><!-- /.col-lg-3 -->
+              <div class="col-xs-6 col-md-4">
+                <img class="img-rounded" src="img/cristina.jpg" alt="Cristina Pop" style="width: 140px; height: 198px;">
+                <h2>Cristina Pop</h2>
+                <p>Board Member at Large</p>
+                <br></br>
+              </div><!-- /.col-lg-3 -->
+              <div class="col-xs-6 col-md-4">
+                <img class="img-rounded" src="img/lisa.png" alt="Lisa Wang" style="width: 140px; height: 198px;">
+                <h2>Lisa Wang</h2>
+                <p>Board Member at Large</p>
+                <br></br>
+              </div><!-- /.col-lg-3 -->
+              <div class="col-xs-6 col-md-4">
+                <img class="img-rounded" src="" alt="Paula Kusumaputri" style="width: 140px; height: 198px;">
+                <h2>Paula Kusumaputri</h2>
+                <p>Board Member at Large</p>
+                <br></br>
+              </div><!-- /.col-lg-3 -->
+              <div class="col-xs-6 col-md-4">
+                <img class="img-rounded" src="" alt="Kylie Jue" style="width: 140px; height: 198px;">
+                <h2>Kylie Ju</h2>
+                <p>Board Member at Large</p>
+                <br></br>
+              </div><!-- /.col-lg-3 -->
+            </div><!-- /.row -->
+          </div><!-- /.container-fluid -->
+
+
+        </div><!-- /.container -->
+
+        <hr class="featurette-divider">
+
+        <div class="jumbotron" id = "events">
+
+          <div class="container">
+            <h1>Events info here</h1>
+            <p class="lead">Still under construction.</p>
+          </div>
+
+        </div><!-- /.container -->
+
+        <hr class="featurette-divider">
+
+
+        <!-- For sections like these with text only, we can go with the About section style (aligned w/room for image) or this Industry section style (centered w/no image room). Let me know what you think looks better -->
+        <div class="jumbotron" id = "industry">
+
+          <div class = "container">
+            <h2 class="featurette-heading">Industry</h2>
+            <br></br>
+            <p class = "lead"> 
+              If you are interested in sponsoring WiCS, please 
+              <a href = "mailto:wics-board@lists.stanford.edu" id = "contactPopover" data-placement="top" data-trigger = "hover" rel = "popover">
+                e-mail the board
+              </a>
+              and our Industry Relations Coordinator will get in touch with you with more details.
+            </p>
+            <script type = "text/javascript"> 
+            $("#contactPopover").popover({content: 'wics-board AT lists DOT stanford DOT edu'});
+            </script>
+            <p class = "lead">
+              We have a number of ways companies can get involved, including industry panels, our mentorship program, meal-time chats with engineers, and other exciting events. We are always open to suggestions so please feel free to get in touch! </p>
+            </div>
+
+          </div><!-- /.container -->
+
+          <hr class="featurette-divider">
+
+
+          <div class="jumbotron" id = "resources">
+
+           <div class = "container">
+            <h2 class="featurette-heading">Resources</h2>
+            <br></br>
+            <a id = "campus-resources"> </a>
+            <h2 class = "text-muted"> Campus Resources </h2>
+            <h3 class = "text-muted"> General Campus Resources </h3>
+            <h3><a href = " http://forum.stanford.edu/careers/studentlogin.php" target = "_blank"> Stanford Computer Forum </a></h3>
+            <p class = "lead"> The department's own recruiting network. Great source of information about companies, salaries, etc. </p>
+            <h3><a href = "http://studentaffairs.stanford.edu/cdc" target = "_blank"> Stanford Career Development Center </a></h3>
+            <p class = "lead"> Career fairs, skills assessment, and many other resources for figuring out career choices. </p>
+            <h3 class = "text-muted"> Women-Specific Campus Resources </h3>
+            <h3><a href = " http://studentaffairs.stanford.edu/wcc" target = "_blank"> Women's Community Center </a></h3>
+            <p class = "lead"> Events and resources addressing women's issues at Stanford. Mailing list: wcc_announce@lists.stanford.edu </p>
+            <h3 class = "text-muted"> Resources for Graduate Students </h3>
+            <h3><a href = "http://vpge.stanford.edu/programs/wise.html" target = "_blank"> Women in Science and Engineering (WISE) </a></h3>
+            <p class = "lead"> (For graduate students and postdocs) WISE groups are professionally facilitated weekly meetings on issues relevant to group members, such as interaction with advisors and peers, work-life balance, and career choices. </p>
+            <h3><a href = "http://www.stanford.edu/group/mewomen/" target = "_blank"> Women Mechanical Engineers</a></h3>
+            <p class = "lead"> (Geared towards graduate students but everyone is welcome) The ME women group usually holds a seminar series in the winter quarter with a fairly useful and interesting lineup of speakers. </p>
+          </div>
+
+          <div class = "container">
+            <br></br>
+            <a id = "scholarships"> </a>
+            <h2 class = "text-muted"> Scholarships </h2>
+            <h3 class = "text-muted"> General Scholarships </h3>
+            <h3><a href = "http://www.google.com/anitaborg/us/" target = "_blank"> Anita Borg Memorial Scholarship </a></h3>
+            <p class = "lead"> (Women Only) <b> Deadline: February </b> The Google Anita Borg Memorial Scholarship was established to honor the legacy of Anita Borg and her efforts to encourage women to pursue careers in computer science and technology. Google Anita Borg Scholarship recipients will each receive a $10,000 award. </p>
+            <h3><a href = "http://research.microsoft.com/en-us/collaboration/awards/fellows-women.aspx" target = "_blank"> Microsoft Research Graduate Women's Scholarship </a></h3>
+            <p class = "lead"> (Women Only) <b> Deadline: October </b> The Microsoft Research Graduate Women’s Scholarship is a one-year scholarship program for outstanding women graduate students and is designed to help increase the number of women pursuing a PhD. This program supports women in the second year of their graduate studies. Women who are interested in this scholarship must apply during first year of graduate studies. </p>
+            <h3><a href = "http://research.microsoft.com/en-us/collaboration/awards/apply-us.aspx" target = "_blank"> Microsoft Research PhD Fellowship Program </a></h3>
+            <p class = "lead"> <b> Deadline: October </b> The Microsoft Research PhD Fellowship is a two-year fellowship program for outstanding PhD students nominated by their universities. This program supports men and women in their third and fourth years of PhD graduate studies. To be eligible for this fellowship, you must apply during your second or third year of PhD studies. Fellowships are granted by Microsoft Research at the discretion of Microsoft. </p>
+            <h3 class = "text-muted"> Conference Scholarships </h3>
+            <h3><a href = "http://women.acm.org/scholarship" target = "_blank"> ACM-W Conference Scholarships </a></h3>
+            <p class = "lead"> <b> Deadline: Rolling </b> ACM-W, with funding from Wipro Technologies, provides support for women undergraduate and graduate students in Computer Science and related programs who wish to attend research conferences. As of 2011, twenty ACM-W/Wipro scholarships will be funded annually: ten scholarships of up to $600 will be awarded for intra-continental conference travel, and ten scholarships of up to $1200 will be awarded for intercontinental conference travel. </p>
+            <h3><a href = "http://committees.comsoc.org/n2women/" target = "_blank"> N2 Women Student Fellowships </a></h3>
+            <p class = "lead"> <b> Deadline: Rolling </b> N2 awards partially cover student travel costs to conferences in communications and networking research. In exchange, the student must help organize an N2 Women event at the conference. The benefit of organizing the event is for the student to connect with the conference organizers, who are typically leaders in the research field.</p>
+            <h3><a href = "http://gracehopper.org/scholars/" target = "_blank"> Grace Hopper Scholarship </a></h3>
+            <p class = "lead"> <b> Deadline: May </b> Grace Hopper Conference scholarships cover a combination of conference registration (which includes most meals), lodging, and fixed amount of travel reimbursement funds.</p>
+            <h3 class = "text-muted"> Summer Programs </h3>
+            <h3><a href = "http://www.truststc.org/wise/" target = "_blank"> Women's Institute in Summer Enrichment (WISE) </a></h3>
+            <p class = "lead"> <b> Deadline: April </b> The Women’s Institute in Summer Enrichment (WISE) is an annual education and outreach program held on the UC Berkeley campus. It brings together graduate students, postdocs, and faculty from all disciplines who are interested in ubiquitous secure technology and the social, political, and economical ramifications that are associated with this technology. </p>
+
+          </div><!-- /.container -->
+
+          <div class = "container">
+            <br></br>
+            <a id = "workshops"> </a>
+            <h2 class = "text-muted"> Workshops and Conferences </h2>
+            <h3><a href = "http://womenintheory.wordpress.com/" target = "_blank">Workshop for Women in Theory </a></h3>
+            <p class = "lead"> <b> June, Princeton NJ. Deadline: March </b> The Women in Theory (WIT) Workshop is intended for graduate and undergraduate students in the area of theory of computer science. The workshop will feature technical talks and tutorials by senior and junior women in the field, as well as social events and activities.</p>
+            <h3><a href = "http://www.wimlworkshop.org/" target = "_blank"> Workshop for Women in Machine Learning </a></h3>
+            <p class = "lead"> <b> December, Co-located with NIPS conference. Deadline: September </b> This day-long workshop gives female faculty, research scientists, and graduate students in the machine learning community an opportunity to meet, exchange ideas and learn from each other. Underrepresented minorities and undergraduates interested in machine learning research are encouraged to attend.</p>
+            <h3><a href = "http://www.physics.ox.ac.uk/FutureScienceLeaders/" target = "_blank"> Future Science Leaders Workshop </a></h3>
+            <p class = "lead"> <b> September, Oxford Universiy </b> The Future Science Leaders program is led by Katherine Blumdell, Oxford University, for early-career women researchers in physics, math, and computer-science fields. The objective is to explore challenges that scientists face today, techniques for scientists to succeed in research, and to educate today’s and tomorrow’s scientists. </p>         
+          </div><!-- /.container -->
         </div>
 
-        <div class = "collapse navbar-collapse" id = "main-header">
-          <ul class = "nav navbar-nav">
-            <!-- <li> <a class = "navbar-brand" href = "#" class = "navlink"> WiCS </a></li> -->
-            <!-- <li><a href="#about" class = "navlink">About</a></li>
-            <li><a href="#contact" class = "navlink">Contact</a></li>
-            <li><a href="#events" class = "navlink">Events</a></li>
-            <li><a href="#industry" class = "navlink">Industry</a></li>
-            <li><a href="#resources" class = "navlink">Resources</a></li> -->
-            <li><a href="#about" >About</a></li>
-            <li><a href="#contact" >Contact</a></li>
-            <li><a href="#events" >Events</a></li>
-            <li><a href="#industry" >Industry</a></li>
-            <li><a href="#resources" >Resources</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div>
-    </div>
+        <hr class="featurette-divider">
 
+        <footer>
+          <p class="pull-right"><a href="#">Back to top</a></p>
+          <p>&copy; 2014 Stanford University Women in Computer Science &middot;</p>
+        </footer>
 
-    <div class="jumbotron" id = "intro">
-
-      <div class="container">
-        <!-- <img src = "wics_logo_crop.png" alt = "logo" /> </h1> -->
-        <h1>Women in Computer Science</h1>
-        <h1>Stanford University </h1>
-      </div>
-
-    </div><!-- /.container -->
-
-
-
-    <div class="jumbotron" id = "about">
-
-      <div class="container">
-        <h1>About</h1>
-        <p class="lead"> WiCS is a student organization within Stanford University. Our purpose is to
-          support and promote women in Computer Science by encouraging discussion and raising awareness
-          of the issues they face. WiCS serves to bring together women who share common interests, concerns,
-          and ambitions, both inside and outside of the CS context.
-
-          Please e-mail wics-board AT lists DOT stanford DOT edu with any questions or comments, or if you'd
-          like to get involved! </p>
-
-          <p class = "lead"> To suscribe to our main mailing list: 
-            https://mailman.stanford.edu/mailman/listinfo/wics_announce</p>
-
-            <p class = "lead"> To suscribe to our mailing list about industry opportunities: 
-            https://mailman.stanford.edu/mailman/listinfo/wics-recruiting</p>
-
-      </div>
-
-    </div><!-- /.container -->
-
-
-    <div class="jumbotron" id = "contact">
-
-      <div class="container">
-        <h1>Contact info here</h1>
-        <p class="lead">Still under construction.</p>
-      </div>
-
-    </div><!-- /.container -->
-
-    <div class="jumbotron" id = "events">
-
-      <div class="container">
-        <h1>Events info here</h1>
-        <p class="lead">Still under construction.</p>
-      </div>
-
-    </div><!-- /.container -->
-
-    <div class="jumbotron" id = "industry">
-
-      <div class="container">
-        <h1>Industry info here</h1>
-        <p class="lead">Still under construction.</p>
-      </div>
-
-    </div><!-- /.container -->
-
-    <div class="jumbotron" id = "resources">
-
-      <div class="container">
-        <h1>Resources info here</h1>
-        <p class="lead">Still under construction.</p>
-      </div>
-
-    </div><!-- /.container -->
-
-    <div class = "footer">
-      <div class = "container">
-        <p class = "text-muted">Footer--link to facebook here</p>
-      </div>
-    </div>   
-
-
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-  </body>
-</html>
+      </body>
+      </html>
