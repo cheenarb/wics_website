@@ -23,7 +23,7 @@ body
 
 .navbar 
 {
-  background-color:rgba(0,0,0,0.87);
+  background-color:rgba(255,255,255,0.95);
 	border: 0;
 }
 
@@ -35,8 +35,8 @@ body
 .navbar .nav > li > a
 {
 	font-size: 12px;
-  font-weight:300;
-	color: white;
+  font-weight:400;
+	color: black;
 /*	float: left; */
 	letter-spacing: 2px;
 	margin-right: 20px;
@@ -139,18 +139,45 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 div.picture {
   overflow:hidden;
-  height:650px;
+  height:650px; /* this would have to be set via javascript */
   width:100%;
   position:relative;
   top:0;
+  background-color: #ffffff;
 }
 
-div.picture > img {
+img.picture{
   width:100%;
-  opacity:0.9;
+  opacity:0.8;
+}
+
+img.text {
+  position: absolute;
+  top:150px;
+  left:398px;
+  width:500px;
+  z-index:100;
+}
+
+.wrapper {
+  width:100%;
+  position:absolute;
+  top:420px;
+  z-index:100;
+}
+
+.smalltitle {
+  width:550px;
+  color:white;
+  font-family: 'Open Sans';
+  font-weight:400;
+  font-size:16px;
+  margin: auto;
+  text-align: center;
 }
 
 .overlay {
+/*/  display:none;*/
   background: transparent url("http://jellythemes.com/themes/solido/img/overlay.png");
   opacity: 0.5;
   z-index: 0;
