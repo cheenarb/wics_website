@@ -138,6 +138,15 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;    
 }
 
+.purple-h2 {
+  color:#800080 !important;
+}
+
+.purple-h1 {
+  color: #800080 !important;
+}
+
+
 
 
 
