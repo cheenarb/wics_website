@@ -18,7 +18,7 @@ body
 
 #welcome-text
 {
-	padding-top: 15px;
+	padding-top: 40px;
 }
 
 .navbar 
@@ -65,6 +65,38 @@ body
 {
 	display: table-cell;
 	text-align: center;
+}
+
+.navbar-header .navbar-toggle .icon-bar
+{
+  background-color: #a3a3ff;
+  /*border-color: #A3A3FF;*/
+}
+
+.navbar-header .navbar-toggle:hover .icon-bar
+{
+  background-color: #fff;
+  /*border-color: #A3A3FF;*/
+}
+
+.navbar-header .navbar-toggle
+{
+  border-color: #fff;
+}
+
+.navbar-header .navbar-toggle:hover
+{
+  background-color: #A3A3FF;
+}
+
+.navbar-header .navbar-toggle:focus
+{
+  background-color: #a3a3ff;
+}
+
+.navbar-header .navbar-toggle:focus .icon-bar
+{
+  background-color: #fff;
 }
 
 html {
