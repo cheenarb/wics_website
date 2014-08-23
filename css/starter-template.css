@@ -32,7 +32,7 @@ body
 	max-width: 10 px;	
 }
 
-.navbar .nav > li > a
+.navbar .nav > li > a, .navbar .navbar-brand, .dropdown-menu >li >a
 {
 	font-size: 12px;
   font-weight:400;
@@ -47,11 +47,11 @@ body
 	/*height: 40px;*/
 }
 
-.navbar .nav > li > a:hover, .navbar-nav > .active > a:hover
+.navbar .nav > li > a:hover, .navbar-nav > .active > a:hover, .navbar .navbar-brand:hover 
 {
 	display: block;
 /*	background-color: white; */
-	color: #A3A3FF;
+	color: #800080;
 	text-decoration: none;
 }
 
@@ -69,8 +69,8 @@ body
 
 .navbar-header .navbar-toggle .icon-bar
 {
-  background-color: #a3a3ff;
-  /*border-color: #A3A3FF;*/
+  /*background-color: #a3a3ff;*/
+  background-color: #800080;
 }
 
 .navbar-header .navbar-toggle:hover .icon-bar
@@ -86,17 +86,23 @@ body
 
 .navbar-header .navbar-toggle:hover
 {
-  background-color: #A3A3FF;
+  background-color: #800080;
 }
 
 .navbar-header .navbar-toggle:focus
 {
-  background-color: #a3a3ff;
+  background-color: #800080;
 }
 
 .navbar-header .navbar-toggle:focus .icon-bar
 {
   background-color: #fff;
+}
+
+.dropdown-menu >li > a:hover
+{
+  color: #800080;
+  background-color: rgba(255,255,255,0.95);
 }
 
 html {
@@ -169,7 +175,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;    
 }
 
-<<<<<<< HEAD
 .purple-h2 {
   color:#800080 !important;
 }
@@ -180,7 +185,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 div.picture {
   overflow:hidden;
-  height:650px; /* this would have to be set via javascript */
+  height:650px;  /*this would have to be set via javascript */
   width:100%;
   position:relative;
   top:0;

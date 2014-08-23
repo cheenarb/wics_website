@@ -23,24 +23,24 @@
   <!-- Custom styles for this template -->
   <link href="css/starter-template.css" rel="stylesheet">
 
-        <!-- Bootstrap core JavaScript
-        ================================================== -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/layout.js"></script>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/layout.js"></script>
 
-        <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-        <script src="js/ie-emulation-modes-warning.js"></script>
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="js/ie-emulation-modes-warning.js"></script>
 
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="js/ie10-viewport-bug-workaround.js"></script>
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-    </head>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+   <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
 
     <body> 
 
@@ -54,7 +54,7 @@
               <span class="icon-bar"></span>
             </button>
             <!-- <a class = "navbar-brand" href = "#"><img src = "img/wics_logo_tiny.png"/></a> -->
-            <a class = "navbar-brand" href = "#">Stanford WiCS</a>
+            <a class = "navbar-brand" href = "#intro">STANFORD WICS</a>
           </div>
 
           <div class = "collapse navbar-collapse" id = "main-header">
@@ -66,10 +66,10 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESOURCES <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="#resources">Resources</a></li>
-                  <li><a href="#campus-resources">Campus Resources</a></li>
-                  <li><a href="#scholarships">Scholarships</a></li>
-                  <li><a href="#workshops">Workshops and Conferences</a></li>
+                  <li><a href="#resources">RESOURCES</a></li>
+                  <li><a href="#campus-resources">CAMPUS RESOURCES</a></li>
+                  <li><a href="#scholarships">SCHOLARSHIPS</a></li>
+                  <li><a href="#workshops">WORKSHOPS AND CONFERENCES</a></li>
                 </ul>
               </li>
               <li><a href="#contact">CONTACT</a></li>
@@ -88,6 +88,8 @@
           </div>
         </div>
       </div>
+
+      <hr class="featurette-divider">
 
       <div class = "jumbotron" id = "intro">
         <div class="row featurette">
@@ -316,13 +318,13 @@
 
           <div class="jumbotron" id = "resources">
 
+          <a id = "campus-resources"> </a>
            <div class = "container">
             <h2 class="featurette-heading purple-h2">Resources</h2>
             <br></br>
-            <button type="button" class="btn btn-lg btn-default" data-toggle="collapse" data-target="#campus-resource-collapse">
-             <!--  <span style = "font-size: 30px">  -->Campus Resources <!-- <span class="glyphicon glyphicon-chevron-right"></span>  --><!-- </span> -->
+            <button type="button" class="btn btn-lg btn-link" data-toggle="collapse" data-target="#campus-resource-collapse">
+             <!--  <span style = "font-size: 30px">  --><span><h2>Campus Resources</h2> </span>  <!-- <span class="glyphicon glyphicon-chevron-right"></span>  --><!-- </span> -->
             </button>
-            <a id = "campus-resources"> </a>
             <div id = "campus-resource-collapse">
               <h2 class = "text-muted purple-h2"> Campus Resources </h2>
               <h3 class = "text-muted"> General Campus Resources </h3>
@@ -341,12 +343,12 @@
             </div>
           </div>
 
+          <a id = "scholarships"> </a>
           <div class = "container">
             <br></br>
-            <button type="button" class="btn btn-lg btn-default" data-toggle="collapse" data-target="#scholarship-resource-collapse">
-              Scholarships <!-- <span class="glyphicon glyphicon-chevron-right"></span>  -->
+            <button type="button" class="btn btn-lg btn-link" data-toggle="collapse" data-target="#scholarship-resource-collapse">
+              <span><h2>Scholarships</h2> </span> <!-- <span class="glyphicon glyphicon-chevron-right"></span>  -->
             </button>
-            <a id = "scholarships"> </a>
             <div id = "scholarship-resource-collapse">
               <h2 class = "text-muted purple-h2"> Scholarships </h2>
               <h3 class = "text-muted"> General Scholarships </h3>
@@ -369,12 +371,12 @@
             </div>
           </div><!-- /.container -->
 
+          <a id = "workshops"> </a>
           <div class = "container">
             <br></br>
-            <button type="button" class="btn btn-lg btn-default" data-toggle="collapse" data-target="#workshop-resource-collapse">
-              Workshops and Conferences <!-- <span class="glyphicon glyphicon-chevron-right"></span> -->
+            <button type="button" class="btn btn-lg btn-link" data-toggle="collapse" data-target="#workshop-resource-collapse">
+              <span><h2>Workshops and Conferences</h2> </span> <!-- <span class="glyphicon glyphicon-chevron-right"></span> -->
             </button>
-            <a id = "workshops"> </a>
             <div id = "workshop-resource-collapse">
               <h2 class = "text-muted purple-h2"> Workshops and Conferences </h2>
               <h3><a href = "http://womenintheory.wordpress.com/" target = "_blank">Workshop for Women in Theory </a></h3>
@@ -400,7 +402,7 @@
       <div class="jumbotron" id = "contact">
 
         <div class="container">
-          <h1 class = "purple-h1">Contact Us</h1>
+          <h2 class="featurette-heading purple-h2">Contact Us</h2>
           <br><br/>
           <p class="lead">E-mail: wics-board AT lists DOT stanford DOT edu</p>
         </div>
