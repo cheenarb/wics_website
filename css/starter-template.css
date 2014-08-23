@@ -238,6 +238,16 @@ img.text {
   user-select: none;
 }
 
+.btn-default 
+{
+  border-color: #800080;
+}
+
+.btn-link:hover, .btn-link:focus
+{
+  text-decoration: none;
+}
+
 
 
 
