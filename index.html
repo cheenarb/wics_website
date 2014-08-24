@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Stanford Women in Computer Science">
-  <meta name="author" content="">
+  <meta name="author" content="Cheenar Banerjee">
   <!--link rel="icon" href="../../favicon.ico"-->
 
   <title>Stanford WiCS</title>
@@ -93,8 +93,8 @@
       <div class = "jumbotron" id = "intro">
         <div class="row featurette">
           <div class="col-md-7">
-            <h1 class="featurette-heading">Women in Computer Science <span class="text-muted">Stanford University</span></h1>
-            <h2 class = "text-muted"> Welcome! </h2>
+            <h1 class="featurette-heading purple-h1">Women in Computer Science <span class="text-muted">Stanford University</span></h1>
+            <h2 class = "text-muted purple-h2"> Welcome! </h2>
             <p class="lead" id = "welcome-text">WiCS is a student organization within Stanford University. Our purpose is to
               support and promote women in Computer Science by encouraging discussion and raising awareness
               of the issues they face. WiCS serves to bring together women who share common interests, concerns,
@@ -142,7 +142,7 @@
                   <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
                 </div>
                 <div class="col-md-7">
-                  <h2 class="featurette-heading">About</h2>
+                  <h2 class="featurette-heading purple-h2">About</h2>
                   <h3 class = "text-muted">Mission Statement </h3>
                   <div class="lead">
                     At WiCS we hope to achieve three broad goals:
@@ -172,7 +172,7 @@
 
              <div class="row featurette">
               <div class="col-md-7">
-                <h2 class="featurette-heading">2014-15 Board</h2>
+                <h2 class="featurette-heading purple-h2">2014-15 Board</h2>
               </div>
             </div>
             <br></br>
@@ -281,7 +281,7 @@
         <div class="jumbotron" id = "events">
 
           <div class="container">
-            <h1>Events info here</h1>
+            <h1 class = "purple-h1">Events info here</h1>
             <p class="lead">Still under construction.</p>
           </div>
 
@@ -294,7 +294,7 @@
         <div class="jumbotron" id = "industry">
 
           <div class = "container">
-            <h2 class="featurette-heading">Industry</h2>
+            <h2 class="featurette-heading purple-h2">Industry</h2>
             <br></br>
             <p class = "lead"> 
               If you are interested in sponsoring WiCS, please 
@@ -318,81 +318,102 @@
           <div class="jumbotron" id = "resources">
 
            <div class = "container">
-            <h2 class="featurette-heading">Resources</h2>
+            <h2 class="featurette-heading purple-h2">Resources</h2>
             <br></br>
+            <button type="button" class="btn btn-lg btn-default" data-toggle="collapse" data-target="#campus-resource-collapse">
+             <!--  <span style = "font-size: 30px">  -->Campus Resources <!-- <span class="glyphicon glyphicon-chevron-right"></span>  --><!-- </span> -->
+            </button>
             <a id = "campus-resources"> </a>
-            <h2 class = "text-muted"> Campus Resources </h2>
-            <h3 class = "text-muted"> General Campus Resources </h3>
-            <h3><a href = " http://forum.stanford.edu/careers/studentlogin.php" target = "_blank"> Stanford Computer Forum </a></h3>
-            <p class = "lead"> The department's own recruiting network. Great source of information about companies, salaries, etc. </p>
-            <h3><a href = "http://studentaffairs.stanford.edu/cdc" target = "_blank"> Stanford Career Development Center </a></h3>
-            <p class = "lead"> Career fairs, skills assessment, and many other resources for figuring out career choices. </p>
-            <h3 class = "text-muted"> Women-Specific Campus Resources </h3>
-            <h3><a href = " http://studentaffairs.stanford.edu/wcc" target = "_blank"> Women's Community Center </a></h3>
-            <p class = "lead"> Events and resources addressing women's issues at Stanford. Mailing list: wcc_announce@lists.stanford.edu </p>
-            <h3 class = "text-muted"> Resources for Graduate Students </h3>
-            <h3><a href = "http://vpge.stanford.edu/programs/wise.html" target = "_blank"> Women in Science and Engineering (WISE) </a></h3>
-            <p class = "lead"> (For graduate students and postdocs) WISE groups are professionally facilitated weekly meetings on issues relevant to group members, such as interaction with advisors and peers, work-life balance, and career choices. </p>
-            <h3><a href = "http://www.stanford.edu/group/mewomen/" target = "_blank"> Women Mechanical Engineers</a></h3>
-            <p class = "lead"> (Geared towards graduate students but everyone is welcome) The ME women group usually holds a seminar series in the winter quarter with a fairly useful and interesting lineup of speakers. </p>
+            <div id = "campus-resource-collapse">
+              <h2 class = "text-muted purple-h2"> Campus Resources </h2>
+              <h3 class = "text-muted"> General Campus Resources </h3>
+              <h3><a href = " http://forum.stanford.edu/careers/studentlogin.php" target = "_blank"> Stanford Computer Forum </a></h3>
+              <p class = "lead"> The department's own recruiting network. Great source of information about companies, salaries, etc. </p>
+              <h3><a href = "http://studentaffairs.stanford.edu/cdc" target = "_blank"> Stanford Career Development Center </a></h3>
+              <p class = "lead"> Career fairs, skills assessment, and many other resources for figuring out career choices. </p>
+              <h3 class = "text-muted"> Women-Specific Campus Resources </h3>
+              <h3><a href = " http://studentaffairs.stanford.edu/wcc" target = "_blank"> Women's Community Center </a></h3>
+              <p class = "lead"> Events and resources addressing women's issues at Stanford. Mailing list: wcc_announce@lists.stanford.edu </p>
+              <h3 class = "text-muted"> Resources for Graduate Students </h3>
+              <h3><a href = "http://vpge.stanford.edu/programs/wise.html" target = "_blank"> Women in Science and Engineering (WISE) </a></h3>
+              <p class = "lead"> (For graduate students and postdocs) WISE groups are professionally facilitated weekly meetings on issues relevant to group members, such as interaction with advisors and peers, work-life balance, and career choices. </p>
+              <h3><a href = "http://www.stanford.edu/group/mewomen/" target = "_blank"> Women Mechanical Engineers</a></h3>
+              <p class = "lead"> (Geared towards graduate students but everyone is welcome) The ME women group usually holds a seminar series in the winter quarter with a fairly useful and interesting lineup of speakers. </p>
+            </div>
           </div>
 
           <div class = "container">
             <br></br>
+            <button type="button" class="btn btn-lg btn-default" data-toggle="collapse" data-target="#scholarship-resource-collapse">
+              Scholarships <!-- <span class="glyphicon glyphicon-chevron-right"></span>  -->
+            </button>
             <a id = "scholarships"> </a>
-            <h2 class = "text-muted"> Scholarships </h2>
-            <h3 class = "text-muted"> General Scholarships </h3>
-            <h3><a href = "http://www.google.com/anitaborg/us/" target = "_blank"> Anita Borg Memorial Scholarship </a></h3>
-            <p class = "lead"> (Women Only) <b> Deadline: February </b> The Google Anita Borg Memorial Scholarship was established to honor the legacy of Anita Borg and her efforts to encourage women to pursue careers in computer science and technology. Google Anita Borg Scholarship recipients will each receive a $10,000 award. </p>
-            <h3><a href = "http://research.microsoft.com/en-us/collaboration/awards/fellows-women.aspx" target = "_blank"> Microsoft Research Graduate Women's Scholarship </a></h3>
-            <p class = "lead"> (Women Only) <b> Deadline: October </b> The Microsoft Research Graduate Women’s Scholarship is a one-year scholarship program for outstanding women graduate students and is designed to help increase the number of women pursuing a PhD. This program supports women in the second year of their graduate studies. Women who are interested in this scholarship must apply during first year of graduate studies. </p>
-            <h3><a href = "http://research.microsoft.com/en-us/collaboration/awards/apply-us.aspx" target = "_blank"> Microsoft Research PhD Fellowship Program </a></h3>
-            <p class = "lead"> <b> Deadline: October </b> The Microsoft Research PhD Fellowship is a two-year fellowship program for outstanding PhD students nominated by their universities. This program supports men and women in their third and fourth years of PhD graduate studies. To be eligible for this fellowship, you must apply during your second or third year of PhD studies. Fellowships are granted by Microsoft Research at the discretion of Microsoft. </p>
-            <h3 class = "text-muted"> Conference Scholarships </h3>
-            <h3><a href = "http://women.acm.org/scholarship" target = "_blank"> ACM-W Conference Scholarships </a></h3>
-            <p class = "lead"> <b> Deadline: Rolling </b> ACM-W, with funding from Wipro Technologies, provides support for women undergraduate and graduate students in Computer Science and related programs who wish to attend research conferences. As of 2011, twenty ACM-W/Wipro scholarships will be funded annually: ten scholarships of up to $600 will be awarded for intra-continental conference travel, and ten scholarships of up to $1200 will be awarded for intercontinental conference travel. </p>
-            <h3><a href = "http://committees.comsoc.org/n2women/" target = "_blank"> N2 Women Student Fellowships </a></h3>
-            <p class = "lead"> <b> Deadline: Rolling </b> N2 awards partially cover student travel costs to conferences in communications and networking research. In exchange, the student must help organize an N2 Women event at the conference. The benefit of organizing the event is for the student to connect with the conference organizers, who are typically leaders in the research field.</p>
-            <h3><a href = "http://gracehopper.org/scholars/" target = "_blank"> Grace Hopper Scholarship </a></h3>
-            <p class = "lead"> <b> Deadline: May </b> Grace Hopper Conference scholarships cover a combination of conference registration (which includes most meals), lodging, and fixed amount of travel reimbursement funds.</p>
-            <h3 class = "text-muted"> Summer Programs </h3>
-            <h3><a href = "http://www.truststc.org/wise/" target = "_blank"> Women's Institute in Summer Enrichment (WISE) </a></h3>
-            <p class = "lead"> <b> Deadline: April </b> The Women’s Institute in Summer Enrichment (WISE) is an annual education and outreach program held on the UC Berkeley campus. It brings together graduate students, postdocs, and faculty from all disciplines who are interested in ubiquitous secure technology and the social, political, and economical ramifications that are associated with this technology. </p>
-
+            <div id = "scholarship-resource-collapse">
+              <h2 class = "text-muted purple-h2"> Scholarships </h2>
+              <h3 class = "text-muted"> General Scholarships </h3>
+              <h3><a href = "http://www.google.com/anitaborg/us/" target = "_blank"> Anita Borg Memorial Scholarship </a></h3>
+              <p class = "lead"> (Women Only) <b> Deadline: February </b> The Google Anita Borg Memorial Scholarship was established to honor the legacy of Anita Borg and her efforts to encourage women to pursue careers in computer science and technology. Google Anita Borg Scholarship recipients will each receive a $10,000 award. </p>
+              <h3><a href = "http://research.microsoft.com/en-us/collaboration/awards/fellows-women.aspx" target = "_blank"> Microsoft Research Graduate Women's Scholarship </a></h3>
+              <p class = "lead"> (Women Only) <b> Deadline: October </b> The Microsoft Research Graduate Women’s Scholarship is a one-year scholarship program for outstanding women graduate students and is designed to help increase the number of women pursuing a PhD. This program supports women in the second year of their graduate studies. Women who are interested in this scholarship must apply during first year of graduate studies. </p>
+              <h3><a href = "http://research.microsoft.com/en-us/collaboration/awards/apply-us.aspx" target = "_blank"> Microsoft Research PhD Fellowship Program </a></h3>
+              <p class = "lead"> <b> Deadline: October </b> The Microsoft Research PhD Fellowship is a two-year fellowship program for outstanding PhD students nominated by their universities. This program supports men and women in their third and fourth years of PhD graduate studies. To be eligible for this fellowship, you must apply during your second or third year of PhD studies. Fellowships are granted by Microsoft Research at the discretion of Microsoft. </p>
+              <h3 class = "text-muted"> Conference Scholarships </h3>
+              <h3><a href = "http://women.acm.org/scholarship" target = "_blank"> ACM-W Conference Scholarships </a></h3>
+              <p class = "lead"> <b> Deadline: Rolling </b> ACM-W, with funding from Wipro Technologies, provides support for women undergraduate and graduate students in Computer Science and related programs who wish to attend research conferences. As of 2011, twenty ACM-W/Wipro scholarships will be funded annually: ten scholarships of up to $600 will be awarded for intra-continental conference travel, and ten scholarships of up to $1200 will be awarded for intercontinental conference travel. </p>
+              <h3><a href = "http://committees.comsoc.org/n2women/" target = "_blank"> N2 Women Student Fellowships </a></h3>
+              <p class = "lead"> <b> Deadline: Rolling </b> N2 awards partially cover student travel costs to conferences in communications and networking research. In exchange, the student must help organize an N2 Women event at the conference. The benefit of organizing the event is for the student to connect with the conference organizers, who are typically leaders in the research field.</p>
+              <h3><a href = "http://gracehopper.org/scholars/" target = "_blank"> Grace Hopper Scholarship </a></h3>
+              <p class = "lead"> <b> Deadline: May </b> Grace Hopper Conference scholarships cover a combination of conference registration (which includes most meals), lodging, and fixed amount of travel reimbursement funds.</p>
+              <h3 class = "text-muted"> Summer Programs </h3>
+              <h3><a href = "http://www.truststc.org/wise/" target = "_blank"> Women's Institute in Summer Enrichment (WISE) </a></h3>
+              <p class = "lead"> <b> Deadline: April </b> The Women’s Institute in Summer Enrichment (WISE) is an annual education and outreach program held on the UC Berkeley campus. It brings together graduate students, postdocs, and faculty from all disciplines who are interested in ubiquitous secure technology and the social, political, and economical ramifications that are associated with this technology. </p>
+            </div>
           </div><!-- /.container -->
 
           <div class = "container">
             <br></br>
+            <button type="button" class="btn btn-lg btn-default" data-toggle="collapse" data-target="#workshop-resource-collapse">
+              Workshops and Conferences <!-- <span class="glyphicon glyphicon-chevron-right"></span> -->
+            </button>
             <a id = "workshops"> </a>
-            <h2 class = "text-muted"> Workshops and Conferences </h2>
-            <h3><a href = "http://womenintheory.wordpress.com/" target = "_blank">Workshop for Women in Theory </a></h3>
-            <p class = "lead"> <b> June, Princeton NJ. Deadline: March </b> The Women in Theory (WIT) Workshop is intended for graduate and undergraduate students in the area of theory of computer science. The workshop will feature technical talks and tutorials by senior and junior women in the field, as well as social events and activities.</p>
-            <h3><a href = "http://www.wimlworkshop.org/" target = "_blank"> Workshop for Women in Machine Learning </a></h3>
-            <p class = "lead"> <b> December, Co-located with NIPS conference. Deadline: September </b> This day-long workshop gives female faculty, research scientists, and graduate students in the machine learning community an opportunity to meet, exchange ideas and learn from each other. Underrepresented minorities and undergraduates interested in machine learning research are encouraged to attend.</p>
-            <h3><a href = "http://www.physics.ox.ac.uk/FutureScienceLeaders/" target = "_blank"> Future Science Leaders Workshop </a></h3>
-            <p class = "lead"> <b> September, Oxford Universiy </b> The Future Science Leaders program is led by Katherine Blumdell, Oxford University, for early-career women researchers in physics, math, and computer-science fields. The objective is to explore challenges that scientists face today, techniques for scientists to succeed in research, and to educate today’s and tomorrow’s scientists. </p>         
-          </div><!-- /.container -->
+            <div id = "workshop-resource-collapse">
+              <h2 class = "text-muted purple-h2"> Workshops and Conferences </h2>
+              <h3><a href = "http://womenintheory.wordpress.com/" target = "_blank">Workshop for Women in Theory </a></h3>
+              <p class = "lead"> <b> June, Princeton NJ. Deadline: March </b> The Women in Theory (WIT) Workshop is intended for graduate and undergraduate students in the area of theory of computer science. The workshop will feature technical talks and tutorials by senior and junior women in the field, as well as social events and activities.</p>
+              <h3><a href = "http://www.wimlworkshop.org/" target = "_blank"> Workshop for Women in Machine Learning </a></h3>
+              <p class = "lead"> <b> December, Co-located with NIPS conference. Deadline: September </b> This day-long workshop gives female faculty, research scientists, and graduate students in the machine learning community an opportunity to meet, exchange ideas and learn from each other. Underrepresented minorities and undergraduates interested in machine learning research are encouraged to attend.</p>
+              <h3><a href = "http://www.physics.ox.ac.uk/FutureScienceLeaders/" target = "_blank"> Future Science Leaders Workshop </a></h3>
+              <p class = "lead"> <b> September, Oxford Universiy </b> The Future Science Leaders program is led by Katherine Blumdell, Oxford University, for early-career women researchers in physics, math, and computer-science fields. The objective is to explore challenges that scientists face today, techniques for scientists to succeed in research, and to educate today’s and tomorrow’s scientists. </p>         
+            </div><!-- /.container -->
+          </div>
         </div>
       </div>
+
+      <script>
+         $('#campus-resource-collapse').collapse("hide");
+         $('#scholarship-resource-collapse').collapse("hide");
+         $('#workshop-resource-collapse').collapse("hide");
+      </script>
+
 
       <hr class="featurette-divider">
 
       <div class="jumbotron" id = "contact">
 
-          <div class="container">
-            <h1>Contact Us</h1>
-            <br><br/>
-            <p class="lead">E-mail: wics-board AT lists DOT stanford DOT edu</p>
-          </div>
+        <div class="container">
+          <h1 class = "purple-h1">Contact Us</h1>
+          <br><br/>
+          <p class="lead">E-mail: wics-board AT lists DOT stanford DOT edu</p>
+        </div>
 
-        </div><!-- /.container -->
+      </div><!-- /.container -->
 
-        <hr class="featurette-divider">
+      <hr class="featurette-divider">
 
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2014 Stanford University Women in Computer Science &middot;</p>
       </footer>
 
-  </body>
-</html>
+    </body>
+    </html>

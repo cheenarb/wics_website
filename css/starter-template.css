@@ -161,6 +161,14 @@ img.text {
   z-index:100;
 }
 
+.purple-h2 {
+  color:#800080 !important;
+}
+
+.purple-h1 {
+  color: #800080 !important;
+}
+
 .wrapper {
   width:100%;
   position:absolute;
