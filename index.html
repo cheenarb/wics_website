@@ -67,10 +67,15 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESOURCES <span class="caret"></span></a>
                 <ul class="dropdown-menu dropdown-menu-right" role="menu">
                   <li><a href="#resources">RESOURCES</a></li>
-                  <li><a href="#campus-resources">CAMPUS RESOURCES</a></li>
-                  <li><a href="#scholarships">SCHOLARSHIPS</a></li>
-                  <li><a href="#workshops">WORKSHOPS AND CONFERENCES</a></li>
+                  <li><a href="#campus-resources" id = "dropdown-campus">CAMPUS RESOURCES</a></li>
+                  <li><a href="#scholarships" id = "dropdown-scholarships">SCHOLARSHIPS</a></li>
+                  <li><a href="#workshops"id = "dropdown-workshops">WORKSHOPS AND CONFERENCES</a></li>
                 </ul>
+                <script type = "text/javascript">
+                $('#dropdown-campus').click(function(){ $('#campus-resource-collapse').collapse("show"); return true; });
+                $('#dropdown-scholarships').click(function(){ $('#scholarship-resource-collapse').collapse("show"); return true; });
+                $('#dropdown-workshops').click(function(){ $('#workshop-resource-collapse').collapse("show"); return true; });
+                </script>
               </li>
               <li><a href="#contact">CONTACT</a></li>
             </ul>
@@ -112,6 +117,7 @@
               <script type = "text/javascript"> 
               $("#emailPopover").popover({content: 'wics-board AT lists DOT stanford DOT edu'});
               </script>
+
 
               <br><br/>
 
