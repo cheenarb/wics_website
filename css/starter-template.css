@@ -223,7 +223,7 @@ img.text {
 }
 
 .overlay {
-/*/  display:none;*/
+ display:none;
   background: transparent url("http://jellythemes.com/themes/solido/img/overlay.png");
   opacity: 0.5;
   z-index: 0;
