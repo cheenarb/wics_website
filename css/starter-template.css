@@ -25,10 +25,11 @@
 {
   background-color:rgba(255,255,255,0.95);
 	border: 0;
-  height: 70px;
+  min-height: 70px;
 	border-bottom-width:0;
   border-color:#f3f3f3;
 }
+
 
 .navbar .nav > li > a, .dropdown-menu >li >a, .navbar .navbar-brand
 {
