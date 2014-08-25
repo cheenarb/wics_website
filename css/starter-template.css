@@ -1,7 +1,7 @@
 
 {
   /*padding-top: 50px;*/
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Lato', sans-serif;
 }
 
 .jumbotron
@@ -29,16 +29,6 @@
 	border-bottom-width:0;
   border-color:#f3f3f3;
 }
-
-/*.navbar-brand
-{
-  padding:0;
-  line-height: 70px;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
-  color: black;
-}*/
 
 .navbar .nav > li > a, .dropdown-menu >li >a, .navbar .navbar-brand
 {
@@ -248,7 +238,7 @@ img.text {
 {
   border-color: #800080;
   color: #800080;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 .btn-link:hover, .btn-link:focus
