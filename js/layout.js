@@ -47,3 +47,4 @@ $(window).scroll(function () {
 	else
 		$(".navbar").css("border-bottom-width", "1px");
 });
+

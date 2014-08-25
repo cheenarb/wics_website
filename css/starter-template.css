@@ -261,6 +261,11 @@ img.text {
   top: -75px;
 }
 
+.caret-large {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #800080;
+}
 
 
 
