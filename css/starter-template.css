@@ -1,7 +1,7 @@
 body 
 {
   /*padding-top: 50px;*/
-  font-family: 'Open Sans', 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .jumbotron
@@ -34,9 +34,12 @@ body
 {
   padding:0;
   line-height: 70px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.navbar .nav > li > a, .navbar .navbar-brand, .dropdown-menu >li >a
+.navbar .nav > li > a, .dropdown-menu >li >a
 {
 	font-size: 12px;
   font-weight:400;
