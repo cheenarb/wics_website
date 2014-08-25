@@ -248,6 +248,23 @@ img.text {
   text-decoration: none;
 }
 
+.panel-title-link:hover
+{
+  text-decoration: none;
+}
+
+/* Adjust some links for fixed navbar s/t top not hidden behind navbar */
+.adjusted-anchor
+{
+  display: block;
+  position: relative;
+  top: -75px;
+}
+
+
+
+
+
 
 
 
