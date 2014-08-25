@@ -241,6 +241,8 @@ img.text {
 .btn-default 
 {
   border-color: #800080;
+  color: #800080;
+  font-weight: bold;
 }
 
 .btn-link:hover, .btn-link:focus
