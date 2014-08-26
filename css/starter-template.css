@@ -234,11 +234,22 @@ img.text {
   user-select: none;
 }
 
-.btn-default 
+.btn-subscribe
 {
   border-color: #800080;
   color: #800080;
-  /*font-weight: bold;*/
+}
+
+.btn-subscribe:focus
+{
+  background-color: white;
+}
+
+.btn-subscribe:hover
+{
+  background-color: #800080;
+  color: white;
+  border-color: white;
 }
 
 .btn-link:hover, .btn-link:focus
@@ -246,9 +257,22 @@ img.text {
   text-decoration: none;
 }
 
-.panel-title-link:hover
+.panel-title-link:hover, .caret-large:hover
 {
   text-decoration: none;
+  color: #800080;
+}
+
+.panel {
+  border: none;
+}
+
+.panel-title {
+  background-color: #fff;
+}
+
+.panel-title-link {
+  color: black;
 }
 
 /* Adjust some links for fixed navbar s/t top not hidden behind navbar */
@@ -260,10 +284,11 @@ img.text {
 }
 
 .caret-large {
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 8px solid #800080;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid black;
 }
+
 
 
 /* -------------------------------------------------- */
