@@ -37,8 +37,8 @@
 	color: black;
 /*	float: left; */
 	letter-spacing: 2px;
-	margin-right: 20px;
-	margin-left: 20px;
+	margin-right: 15px;
+	margin-left: 15px;
 	margin-top: 20px;
 	margin-bottom: 0px;
 	padding: 5px !important;
@@ -325,10 +325,6 @@ img.text {
 .personbox > img {
   width: 100%;
   height: 225px;
-}
-
-.footer-padding {
-  margin: 20px;
 }
 
 #accordion {
