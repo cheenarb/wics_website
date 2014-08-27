@@ -48,6 +48,12 @@ $(window).scroll(function () {
 		$(".navbar").css("border-bottom-width", "1px");
 });
 
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});
+
 
 
 
