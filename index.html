@@ -87,45 +87,45 @@
 
   </div>
   
-<div class="container">
+  <div class="container">
 
-        <div class="jumbotron" id = "about">
+    <div class="jumbotron" id = "about">
 
-          <div class = "container">
-            <h2 class="text-muted">STANFORD UNIVERSITY</h2>
-            <h1 class="featurette-heading purple-h1">WOMEN IN COMPUTER SCIENCE </h1>
-            <h2 class = "text-muted purple-h2"> Welcome! </h2>
-            <br>
-            <p class = "lead">
-              We are Women in Computer Science, a student organization at Stanford University. Our mission is to promote and support the growing community of women in CS and technology. Our three broad goals are to build and strengthen this community, raise awareness of the issues women in the field face, and encourage their educational and professional development.
+      <div class = "container">
+        <h2 class="text-muted">STANFORD UNIVERSITY</h2>
+        <h1 class="featurette-heading purple-h1">WOMEN IN COMPUTER SCIENCE </h1>
+        <h2 class = "text-muted purple-h2"> Welcome! </h2>
+        <br>
+        <p class = "lead">
+          We are Women in Computer Science, a student organization at Stanford University. Our mission is to promote and support the growing community of women in CS and technology. Our three broad goals are to build and strengthen this community, raise awareness of the issues women in the field face, and encourage their educational and professional development.
+        </p>
+
+        <p class = "lead">
+          Please
+          <a href = "mailto:wics-board@lists.stanford.edu" id = "emailPopover" data-placement="top" data-trigger = "hover" rel = "popover">
+            e-mail us
+          </a>
+          with any questions or comments, or find out how to <a href = "#involved"> get involved </a>
+        </p>
+        <script type = "text/javascript"> 
+        $("#emailPopover").popover({content: 'wics-board (at) lists (dot) stanford (dot) edu'});
+        </script>
+        <br>
+
+        <p class = "lead">
+          <a href= "https://mailman.stanford.edu/mailman/listinfo/wics_announce" target="_blank" class="btn btn-lg btn-default btn-subscribe">
+            SUBSCRIBE </a>
+            to our main mailing list. 
+          </p>
+
+          <p class = "lead">
+            <a href= "https://mailman.stanford.edu/mailman/listinfo/wics-recruiting" target="_blank" class="btn btn-lg btn-default btn-subscribe">
+              SUBSCRIBE </a>
+              to our recruiting mailing list. 
             </p>
 
-            <p class = "lead">
-              Please
-              <a href = "mailto:wics-board@lists.stanford.edu" id = "emailPopover" data-placement="top" data-trigger = "hover" rel = "popover">
-                e-mail us
-              </a>
-              with any questions or comments, or find out how to <a href = "#involved"> get involved </a>
-            </p>
-            <script type = "text/javascript"> 
-            $("#emailPopover").popover({content: 'wics-board (at) lists (dot) stanford (dot) edu'});
-            </script>
-            <br>
-
-            <p class = "lead">
-              <a href= "https://mailman.stanford.edu/mailman/listinfo/wics_announce" target="_blank" class="btn btn-lg btn-default btn-subscribe">
-                SUBSCRIBE </a>
-                to our main mailing list. 
-              </p>
-
-              <p class = "lead">
-                <a href= "https://mailman.stanford.edu/mailman/listinfo/wics-recruiting" target="_blank" class="btn btn-lg btn-default btn-subscribe">
-                  SUBSCRIBE </a>
-                  to our recruiting mailing list. 
-                </p>
-
-              </div>
-            </div>
+          </div>
+        </div>
 
         <hr class = "featurette-divider">
 
@@ -238,6 +238,11 @@
                 <h1> KYLIE JUE </h1>
                 <h2> BOARD MEMBER AT LARGE </h2>
               </div>
+              <div class="personbox">
+                <img src="img/mayaIsrani-crop.jpg" alt = "Maya Israni"></img>
+                <h1> MAYA ISRANI </h1>
+                <h2> BOARD MEMBER AT LARGE </h2>
+              </div>
             </div>
 
           </div><!-- /.container -->
@@ -250,6 +255,24 @@
               <h2 class = "featurette-heading purple-h2">EVENTS</h2>
               <br>
             </div>
+
+            <div class = "container">
+              <h3 class = "text-muted"> UPCOMING </h3>
+              <div class = "container container-personbox">
+                <div class = "personbox">
+                  <a href = "" data-toggle = "modal" data-target ="#eventModal1"><img src = "img/sept29.jpg" alt = "September 29, 2014"> </img> </a>
+                  <h1> <a href = "" data-toggle = "modal" data-target ="#eventModal1"> RESUME WORKSHOP + WELCOME BACK MIXER </a> </h1>
+                  <h2> TWITTER </h2>
+                </div>
+
+                <div class = "personbox">
+                  <a href = "" data-toggle = "modal" data-target ="#eventModal2"><img src = "img/oct2.jpg" alt = "October 2, 2014"> </img> </a>
+                  <h1> <a href = "" data-toggle = "modal" data-target ="#eventModal2"> PANEL + DINNER </a> </h1>
+                  <h2> FACEBOOK </h2>
+                </div>
+              </div>
+
+              <h3 class = "text-muted"> ALL EVENTS </h3>
 
               <div class = "container container-personbox">
                 <div class="personbox">
@@ -268,11 +291,17 @@
                   <h2> SUBTITLE HERE </h2>
                 </div>
                 <div class="personbox">
+                  <a href = "" data-toggle="modal" data-target="#dinnerModal"><img src="http://placekitten.com/210/225" alt = "Casual Dinners"></img></a>
+                  <h1> WICS CASUAL DINNERS</h1>
+                  <h2> SUBTITLE HERE </h2>
+                </div>
+                <div class="personbox">
                   <a href = "" data-toggle="modal" data-target="#internModal"><img src="http://placekitten.com/210/225" alt = "Speaker Series"></img></a>
                   <h1> INTERN EVENTS </h1>
                   <h2> SUBTITLE HERE </h2>
                 </div>
               </div>
+            </div>
 
             <!-- Modal -->
             <div class="modal fade" id="speakerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -283,15 +312,15 @@
                     <h4 class="modal-title" id="myModalLabel">WiCS Distinguished Speaker Series</h4>
                   </div>
                   <div class="modal-body">
-                    <p> The WiCS Distinguished Speaker Series hosts inspirational female leaders about once a quarter for a talk and reception. In addition to highlighting the impact these women have had on the field and their journey toward a top position, the talks offer advice for aspiring young women and for the community in supporting women in tech. Past speakers include Turing Award winner Barbara Liskov, Maria Klawe in her role as President of Harvey Mudd College, and Google[x] VP Megan Smith. </p>
+                    The WiCS Distinguished Speaker Series hosts inspirational female leaders about once a quarter for a talk and reception. In addition to highlighting the impact these women have had on the field and their journey toward a top position, the talks offer advice for aspiring young women and for the community in supporting women in tech. Past speakers include Turing Award winner Barbara Liskov, Maria Klawe in her role as President of Harvey Mudd College, and Google[x] VP Megan Smith. 
 
-                    (image carousel here?)
+                    Coming up: November 6, 2014 -- Yoki Matsuoka, VP of Technology at Nest. 
                   </div>
                 </div>
               </div>
             </div>
 
-             <div class="modal fade" id="mentorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal fade" id="mentorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -307,7 +336,52 @@
               </div>
             </div>
 
-             <div class="modal fade" id="internModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+             <div class="modal fade" id="dinnerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">WiCS Casual Dinners</h4>
+                  </div>
+                  <div class="modal-body">
+                    The WiCS Casual Dinners are held bi-quarterly for undergraduate and graduate students, staff and faculty members, and industry professionals. These dinners help foster a community of female technologists in both academia and industry. The dinners are targeted towards female students who are interested in computer science, but all students are welcome.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="eventModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Twitter Resume Workshop + Welcome Back Mixer </h4>
+                  </div>
+                  <div class="modal-body">
+                    When: Monday, September 29, 2014<br>
+                      Where: Gates 504 <br>
+                      An RSVP form will be posted soon!                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="eventModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Facebook panel + dinner </h4>
+                  </div>
+                  <div class="modal-body">
+                    When: Thursday, October 2, 2014 <br>
+                      Check back soon for more details!                   
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="internModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -354,138 +428,137 @@
             <div class="jumbotron" id = "resources">
 
 
-          <h2 class = "featurette-heading purple-h2"> RESOURCES </h2>
-          <a id = "campus-resources" class = "adjusted-anchor"> </a>
-          <div class="panel-group" id="accordion">
-            <div class="panel panel-default">
-              <div class="panel">
-                <h4 class="panel-title">
-                  <a class = "panel-title-link" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                    <h3> CAMPUS RESOURCES <span class="caret caret-large"></span> </h3>
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseOne" class="panel-collapse collapse in">
-                <div class="panel-body">
-                  <h3 class = "text-muted"> GENERAL CAMPUS RESOURCES </h3>
-                  <h3><a href = " http://forum.stanford.edu/careers/studentlogin.php" target = "_blank"> Stanford Computer Forum </a></h3>
-                  <p class = "lead"> The department's own recruiting network. Great source of information about companies, salaries, etc. </p>
-                  <h3><a href = "http://studentaffairs.stanford.edu/cdc" target = "_blank"> Stanford Career Development Center </a></h3>
-                  <p class = "lead"> Career fairs, skills assessment, and many other resources for figuring out career choices. </p>
-                  <br>
-                  <h3 class = "text-muted"> WOMEN-SPECIFIC CAMPUS RESOURCES </h3>
-                  <h3><a href = " http://studentaffairs.stanford.edu/wcc" target = "_blank"> Women's Community Center </a></h3>
-                  <p class = "lead"> Events and resources addressing women's issues at Stanford. Mailing list: wcc_announce@lists.stanford.edu </p>
-                  <br>
-                  <h3 class = "text-muted"> RESOURCES FOR UNDERGRADUATE STUDENTS </h3>
-                  <h3><a href = "http://swe.stanford.edu/cgi-bin/index.php/Home" target = "_blank"> Society of Women Engineers </a></h3>
-                  <div class = "lead"> The Stanford Society of Women Engineers chapter was founded in 1986 with the following mission:
-                    <ul>
-                      <li> Promote the study of engineering and engineering fundamentals to our local youth through outreach work </li>
-                      <li> Provide career and academic development opportunities for our collegiate members </li>
-                      <li> Enhance the diversity of the Stanford engineering community </li>
-                    </ul>
-                     SWE Meeting Times: Wednesdays at 12pm 
+              <h2 class = "featurette-heading purple-h2"> RESOURCES </h2>
+              <a id = "campus-resources" class = "adjusted-anchor"> </a>
+              <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                  <div class="panel">
+                    <h4 class="panel-title">
+                      <a class = "panel-title-link" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                        <h3> CAMPUS RESOURCES <span class="caret caret-large"></span> </h3>
+                      </a>
+                    </h4>
                   </div>
-                  <h3><a href = "http://girlsteachinggirlstocode.org/" target = "_blank"> Girls Teaching Girls to Code </a></h3>
-                  <p class = "lead"> Girls Teaching Girls to Code is a program where Stanford women teach and inspire Bay Area high school girls to explore Computer Science and Engineering. Students learn coding basics, build exciting projects, and develop strong relationships with mentors in the field. Contact: jduan1 (at) stanford (dot) edu </p>
-                  <h3><a href = "https://codethechange.org/" target = "_blank"> Code the Change </a></h3>
-                  <p class = "lead"> Code the Change helps computer scientists use their skills for social change. We believe that social change should be an integral part of computer science culture, and that this is often forgotten in the rush of campus culture. We connect students to nonprofits that need their help, lead code jams for nonprofit work, and maintain a campus community for discussing the social impact of computer science. Contact: Andrew Suciu andrewsuciu (at) gmail (dot) com </p>
-                  <h3><a href = "http://sheplusplus.com" target = "_blank"> she++ </a></h3>
-                  <p class = "lead"> she++ is a nonprofit that seeks to dismantle the untrue sterotype that computer science is not a career for women. We work with the technology industry to create a culture that is more appealing to women, and we work with young women across the globe to dismantle harmful perceptions that they cannot succeed in the technology industry. Our outreach includes an annual fellowship for high school students, an ambassador program for college students, and the creation of online videos and campaigns. We are rebranding technology to be less about the stereotypes, and more about the problem-solving, the building, and the impact. By tackling the source of these stereotypes, we hope to create a field where women feel included, respected, and valued. We are a 501(c)(3) nonprofit run by Stanford undergraduate students. </p>
-                  <br>
-                  <h3 class = "text-muted"> RESOURCES FOR GRADUATE STUDENTS </h3>
-                  <h3><a href = "http://vpge.stanford.edu/programs/wise.html" target = "_blank"> Women in Science and Engineering (WISE) </a></h3>
-                  <p class = "lead"> (For graduate students and postdocs) WISE groups are professionally facilitated weekly meetings on issues relevant to group members, such as interaction with advisors and peers, work-life balance, and career choices. </p>
-                  <h3><a href = "http://www.stanford.edu/group/mewomen/" target = "_blank"> Women Mechanical Engineers</a></h3>
-                  <p class = "lead"> (Geared towards graduate students but everyone is welcome) The ME women group usually holds a seminar series in the winter quarter with a fairly useful and interesting lineup of speakers. </p>
+                  <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <h3 class = "text-muted"> GENERAL CAMPUS RESOURCES </h3>
+                      <h3><a href = " http://forum.stanford.edu/careers/studentlogin.php" target = "_blank"> Stanford Computer Forum </a></h3>
+                      <p class = "lead"> The department's own recruiting network. Great source of information about companies, salaries, etc. </p>
+                      <h3><a href = "http://studentaffairs.stanford.edu/cdc" target = "_blank"> Stanford Career Development Center </a></h3>
+                      <p class = "lead"> Career fairs, skills assessment, and many other resources for figuring out career choices. </p>
+                      <br>
+                      <h3 class = "text-muted"> WOMEN-SPECIFIC CAMPUS RESOURCES </h3>
+                      <h3><a href = " http://studentaffairs.stanford.edu/wcc" target = "_blank"> Women's Community Center </a></h3>
+                      <p class = "lead"> Events and resources addressing women's issues at Stanford. Mailing list: wcc_announce@lists.stanford.edu </p>
+                      <br>
+                      <h3 class = "text-muted"> RESOURCES FOR UNDERGRADUATE STUDENTS </h3>
+                      <h3><a href = "http://swe.stanford.edu/cgi-bin/index.php/Home" target = "_blank"> Society of Women Engineers </a></h3>
+                      <p class = "lead"> The Stanford Society of Women Engineers chapter was founded in 1986 with the following mission: </p>
+                      <ul class = "lead lead-list">
+                        <li> Promote the study of engineering and engineering fundamentals to our local youth through outreach work </li>
+                        <li> Provide career and academic development opportunities for our collegiate members </li>
+                        <li> Enhance the diversity of the Stanford engineering community </li>
+                      </ul>
+                      <p class = "lead"> SWE Meeting Times: Wednesdays at 12pm </p>
+                      <h3><a href = "http://girlsteachinggirlstocode.org/" target = "_blank"> Girls Teaching Girls to Code </a></h3>
+                      <p class = "lead"> Girls Teaching Girls to Code is a program where Stanford women teach and inspire Bay Area high school girls to explore Computer Science and Engineering. Students learn coding basics, build exciting projects, and develop strong relationships with mentors in the field. Contact: jduan1 (at) stanford (dot) edu </p>
+                      <h3><a href = "https://codethechange.org/" target = "_blank"> Code the Change </a></h3>
+                      <p class = "lead"> Code the Change helps computer scientists use their skills for social change. We believe that social change should be an integral part of computer science culture, and that this is often forgotten in the rush of campus culture. We connect students to nonprofits that need their help, lead code jams for nonprofit work, and maintain a campus community for discussing the social impact of computer science. Contact: Andrew Suciu andrewsuciu (at) gmail (dot) com </p>
+                      <h3><a href = "http://sheplusplus.com" target = "_blank"> she++ </a></h3>
+                      <p class = "lead"> she++ is a nonprofit that seeks to dismantle the untrue sterotype that computer science is not a career for women. We work with the technology industry to create a culture that is more appealing to women, and we work with young women across the globe to dismantle harmful perceptions that they cannot succeed in the technology industry. Our outreach includes an annual fellowship for high school students, an ambassador program for college students, and the creation of online videos and campaigns. We are rebranding technology to be less about the stereotypes, and more about the problem-solving, the building, and the impact. By tackling the source of these stereotypes, we hope to create a field where women feel included, respected, and valued. We are a 501(c)(3) nonprofit run by Stanford undergraduate students. </p>
+                      <br>
+                      <h3 class = "text-muted"> RESOURCES FOR GRADUATE STUDENTS </h3>
+                      <h3><a href = "http://vpge.stanford.edu/programs/wise.html" target = "_blank"> Women in Science and Engineering (WISE) </a></h3>
+                      <p class = "lead"> (For graduate students and postdocs) WISE groups are professionally facilitated weekly meetings on issues relevant to group members, such as interaction with advisors and peers, work-life balance, and career choices. </p>
+                      <h3><a href = "http://www.stanford.edu/group/mewomen/" target = "_blank"> Women Mechanical Engineers</a></h3>
+                      <p class = "lead"> (Geared towards graduate students but everyone is welcome) The ME women group usually holds a seminar series in the winter quarter with a fairly useful and interesting lineup of speakers. </p>
+                    </div>
+                  </div>
+                </div>
+                <a id = "scholarships" class = "adjusted-anchor"> </a>
+                <div class="panel panel-default">
+                  <div class="panel">
+                    <h4 class="panel-title">
+                      <a class = "panel-title-link" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                        <h3> SCHOLARSHIPS <span class="caret caret-large"></span> </h3>
+                      </a> 
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                     <h3 class = "text-muted"> GENERAL SCHOLARSHIPS </h3>
+                     <h3><a href = "http://www.google.com/anitaborg/us/" target = "_blank"> Anita Borg Memorial Scholarship </a></h3>
+                     <p class = "lead"> (Women Only) <b> Deadline: February </b> The Google Anita Borg Memorial Scholarship was established to honor the legacy of Anita Borg and her efforts to encourage women to pursue careers in computer science and technology. Google Anita Borg Scholarship recipients will each receive a $10,000 award. </p>
+                     <h3><a href = "http://research.microsoft.com/en-us/collaboration/awards/fellows-women.aspx" target = "_blank"> Microsoft Research Graduate Women's Scholarship </a></h3>
+                     <p class = "lead"> (Women Only) <b> Deadline: October </b> The Microsoft Research Graduate Women’s Scholarship is a one-year scholarship program for outstanding women graduate students and is designed to help increase the number of women pursuing a PhD. This program supports women in the second year of their graduate studies. Women who are interested in this scholarship must apply during first year of graduate studies. </p>
+                     <h3><a href = "http://research.microsoft.com/en-us/collaboration/awards/apply-us.aspx" target = "_blank"> Microsoft Research PhD Fellowship Program </a></h3>
+                     <p class = "lead"> <b> Deadline: October </b> The Microsoft Research PhD Fellowship is a two-year fellowship program for outstanding PhD students nominated by their universities. This program supports men and women in their third and fourth years of PhD graduate studies. To be eligible for this fellowship, you must apply during your second or third year of PhD studies. Fellowships are granted by Microsoft Research at the discretion of Microsoft. </p>
+                     <br>
+                     <h3 class = "text-muted"> CONFERENCE SCHOLARSHIPS </h3>
+                     <h3><a href = "http://women.acm.org/scholarship" target = "_blank"> ACM-W Conference Scholarships </a></h3>
+                     <p class = "lead"> <b> Deadline: Rolling </b> ACM-W, with funding from Wipro Technologies, provides support for women undergraduate and graduate students in Computer Science and related programs who wish to attend research conferences. As of 2011, twenty ACM-W/Wipro scholarships will be funded annually: ten scholarships of up to $600 will be awarded for intra-continental conference travel, and ten scholarships of up to $1200 will be awarded for intercontinental conference travel. </p>
+                     <h3><a href = "http://committees.comsoc.org/n2women/" target = "_blank"> N2 Women Student Fellowships </a></h3>
+                     <p class = "lead"> <b> Deadline: Rolling </b> N2 awards partially cover student travel costs to conferences in communications and networking research. In exchange, the student must help organize an N2 Women event at the conference. The benefit of organizing the event is for the student to connect with the conference organizers, who are typically leaders in the research field.</p>
+                     <h3><a href = "http://gracehopper.org/scholars/" target = "_blank"> Grace Hopper Scholarship </a></h3>
+                     <p class = "lead"> <b> Deadline: May </b> Grace Hopper Conference scholarships cover a combination of conference registration (which includes most meals), lodging, and fixed amount of travel reimbursement funds.</p>
+                     <br>
+                     <h3 class = "text-muted"> SUMMER PROGRAMS </h3>
+                     <h3><a href = "http://www.truststc.org/wise/" target = "_blank"> Women's Institute in Summer Enrichment (WISE) </a></h3>
+                     <p class = "lead"> <b> Deadline: April </b> The Women’s Institute in Summer Enrichment (WISE) is an annual education and outreach program held on the UC Berkeley campus. It brings together graduate students, postdocs, and faculty from all disciplines who are interested in ubiquitous secure technology and the social, political, and economical ramifications that are associated with this technology. </p>
+                   </div>
+                 </div>
+               </div>
+               <a id = "workshops" class = "adjusted-anchor"> </a>
+               <div class="panel panel-default">
+                <div class="panel">
+                  <h4 class="panel-title">
+                    <a class = "panel-title-link" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" >
+                      <h3> WORKSHOPS AND CONFERENCES <span class="caret caret-large"></span> </h3>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <h3><a href = "http://womenintheory.wordpress.com/" target = "_blank">Workshop for Women in Theory </a></h3>
+                    <p class = "lead"> <b> June, Princeton NJ. Deadline: March </b> The Women in Theory (WIT) Workshop is intended for graduate and undergraduate students in the area of theory of computer science. The workshop will feature technical talks and tutorials by senior and junior women in the field, as well as social events and activities.</p>
+                    <h3><a href = "http://www.wimlworkshop.org/" target = "_blank"> Workshop for Women in Machine Learning </a></h3>
+                    <p class = "lead"> <b> December, Co-located with NIPS conference. Deadline: September </b> This day-long workshop gives female faculty, research scientists, and graduate students in the machine learning community an opportunity to meet, exchange ideas and learn from each other. Underrepresented minorities and undergraduates interested in machine learning research are encouraged to attend.</p>
+                    <h3><a href = "http://www.physics.ox.ac.uk/FutureScienceLeaders/" target = "_blank"> Future Science Leaders Workshop </a></h3>
+                    <p class = "lead"> <b> September, Oxford University </b> The Future Science Leaders program is led by Katherine Blumdell, Oxford University, for early-career women researchers in physics, math, and computer-science fields. The objective is to explore challenges that scientists face today, techniques for scientists to succeed in research, and to educate today’s and tomorrow’s scientists. </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <a id = "scholarships" class = "adjusted-anchor"> </a>
-            <div class="panel panel-default">
-              <div class="panel">
-                <h4 class="panel-title">
-                  <a class = "panel-title-link" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                    <h3> SCHOLARSHIPS <span class="caret caret-large"></span> </h3>
-                  </a> 
-                </h4>
-              </div>
-              <div id="collapseTwo" class="panel-collapse collapse">
-                <div class="panel-body">
-                 <h3 class = "text-muted"> GENERAL SCHOLARSHIPS </h3>
-                 <h3><a href = "http://www.google.com/anitaborg/us/" target = "_blank"> Anita Borg Memorial Scholarship </a></h3>
-                 <p class = "lead"> (Women Only) <b> Deadline: February </b> The Google Anita Borg Memorial Scholarship was established to honor the legacy of Anita Borg and her efforts to encourage women to pursue careers in computer science and technology. Google Anita Borg Scholarship recipients will each receive a $10,000 award. </p>
-                 <h3><a href = "http://research.microsoft.com/en-us/collaboration/awards/fellows-women.aspx" target = "_blank"> Microsoft Research Graduate Women's Scholarship </a></h3>
-                 <p class = "lead"> (Women Only) <b> Deadline: October </b> The Microsoft Research Graduate Women’s Scholarship is a one-year scholarship program for outstanding women graduate students and is designed to help increase the number of women pursuing a PhD. This program supports women in the second year of their graduate studies. Women who are interested in this scholarship must apply during first year of graduate studies. </p>
-                 <h3><a href = "http://research.microsoft.com/en-us/collaboration/awards/apply-us.aspx" target = "_blank"> Microsoft Research PhD Fellowship Program </a></h3>
-                 <p class = "lead"> <b> Deadline: October </b> The Microsoft Research PhD Fellowship is a two-year fellowship program for outstanding PhD students nominated by their universities. This program supports men and women in their third and fourth years of PhD graduate studies. To be eligible for this fellowship, you must apply during your second or third year of PhD studies. Fellowships are granted by Microsoft Research at the discretion of Microsoft. </p>
-                 <br>
-                 <h3 class = "text-muted"> CONFERENCE SCHOLARSHIPS </h3>
-                 <h3><a href = "http://women.acm.org/scholarship" target = "_blank"> ACM-W Conference Scholarships </a></h3>
-                 <p class = "lead"> <b> Deadline: Rolling </b> ACM-W, with funding from Wipro Technologies, provides support for women undergraduate and graduate students in Computer Science and related programs who wish to attend research conferences. As of 2011, twenty ACM-W/Wipro scholarships will be funded annually: ten scholarships of up to $600 will be awarded for intra-continental conference travel, and ten scholarships of up to $1200 will be awarded for intercontinental conference travel. </p>
-                 <h3><a href = "http://committees.comsoc.org/n2women/" target = "_blank"> N2 Women Student Fellowships </a></h3>
-                 <p class = "lead"> <b> Deadline: Rolling </b> N2 awards partially cover student travel costs to conferences in communications and networking research. In exchange, the student must help organize an N2 Women event at the conference. The benefit of organizing the event is for the student to connect with the conference organizers, who are typically leaders in the research field.</p>
-                 <h3><a href = "http://gracehopper.org/scholars/" target = "_blank"> Grace Hopper Scholarship </a></h3>
-                 <p class = "lead"> <b> Deadline: May </b> Grace Hopper Conference scholarships cover a combination of conference registration (which includes most meals), lodging, and fixed amount of travel reimbursement funds.</p>
-                 <br>
-                 <h3 class = "text-muted"> SUMMER PROGRAMS </h3>
-                 <h3><a href = "http://www.truststc.org/wise/" target = "_blank"> Women's Institute in Summer Enrichment (WISE) </a></h3>
-                 <p class = "lead"> <b> Deadline: April </b> The Women’s Institute in Summer Enrichment (WISE) is an annual education and outreach program held on the UC Berkeley campus. It brings together graduate students, postdocs, and faculty from all disciplines who are interested in ubiquitous secure technology and the social, political, and economical ramifications that are associated with this technology. </p>
-               </div>
-             </div>
-           </div>
-           <a id = "workshops" class = "adjusted-anchor"> </a>
-           <div class="panel panel-default">
-            <div class="panel">
-              <h4 class="panel-title">
-                <a class = "panel-title-link" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" >
-                  <h3> WORKSHOPS AND CONFERENCES <span class="caret caret-large"></span> </h3>
-                </a>
-              </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse">
-              <div class="panel-body">
-                <h3><a href = "http://womenintheory.wordpress.com/" target = "_blank">Workshop for Women in Theory </a></h3>
-                <p class = "lead"> <b> June, Princeton NJ. Deadline: March </b> The Women in Theory (WIT) Workshop is intended for graduate and undergraduate students in the area of theory of computer science. The workshop will feature technical talks and tutorials by senior and junior women in the field, as well as social events and activities.</p>
-                <h3><a href = "http://www.wimlworkshop.org/" target = "_blank"> Workshop for Women in Machine Learning </a></h3>
-                <p class = "lead"> <b> December, Co-located with NIPS conference. Deadline: September </b> This day-long workshop gives female faculty, research scientists, and graduate students in the machine learning community an opportunity to meet, exchange ideas and learn from each other. Underrepresented minorities and undergraduates interested in machine learning research are encouraged to attend.</p>
-                <h3><a href = "http://www.physics.ox.ac.uk/FutureScienceLeaders/" target = "_blank"> Future Science Leaders Workshop </a></h3>
-                <p class = "lead"> <b> September, Oxford University </b> The Future Science Leaders program is led by Katherine Blumdell, Oxford University, for early-career women researchers in physics, math, and computer-science fields. The objective is to explore challenges that scientists face today, techniques for scientists to succeed in research, and to educate today’s and tomorrow’s scientists. </p>
-              </div>
-            </div>
           </div>
+
+          <script>
+          $('#collapseOne').collapse("hide");
+          $('#collapseTwo').collapse("hide");
+          $('#collapseThree').collapse("hide");
+          </script>
+
+          <div class = "container">
+
+            <hr class="featurette-divider">
+
+            <div class="jumbotron" id = "contact">
+
+              <div class="container">
+                <h2 class="featurette-heading purple-h2">CONTACT US</h2>
+                <br><br/>
+                <p class="lead">If you have any questions or feedback, please e-mail wics-board (at) lists (dot) stanford (dot) edu</p>
+              </div>
+
+            </div><!-- /.container -->
+
+            <hr class="featurette-divider">
+
+            <footer>
+              <p class = "text-center"> &copy; 2014 Stanford University Women in Computer Science &middot; <a href = "#"> Back to top </a> </p>
+            </footer>
+
+          </div> <!-- end container -->
         </div>
-      </div>
 
-      <script>
-      $('#collapseOne').collapse("hide");
-      $('#collapseTwo').collapse("hide");
-      $('#collapseThree').collapse("hide");
-      </script>
-
-      <div class = "container">
-
-      <hr class="featurette-divider">
-
-      <div class="jumbotron" id = "contact">
-
-        <div class="container">
-          <h2 class="featurette-heading purple-h2">CONTACT US</h2>
-          <br><br/>
-          <p class="lead">If you have any questions or feedback, please e-mail wics-board (at) lists (dot) stanford (dot) edu</p>
-        </div>
-
-      </div><!-- /.container -->
-
-      <hr class="featurette-divider">
-
-      <footer>
-        <p class = "text-center"> &copy; 2014 Stanford University Women in Computer Science &middot; <a href = "#"> Back to top </a> </p>
-      </footer>
-
-    </div> <!-- end container -->
-  </div>
-
-    </body>
-    </html>
+      </body>
+      </html>

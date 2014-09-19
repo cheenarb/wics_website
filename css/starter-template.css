@@ -295,7 +295,7 @@ img.text {
 .caret-large {
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-top: 6px solid black;
+    border-top: 6px solid #5a5a5a;
 }
 
 
@@ -334,6 +334,16 @@ img.text {
   width: 210px;
 }
 
+#accordion {
+  margin-top: 50px;
+}
+
 .lead {
   font-weight: normal;
+}
+
+.lead-list {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
 }
