@@ -5,9 +5,11 @@ body
   font-size: 16px;
 }
 
-@media (min-width: 1200px)
-.container {
-  min-width:900px;
+@media (min-width: 1200px) {
+  .container {
+    width:1100px;
+    margin-width:900px;
+}
 }
 
 .jumbotron h1 {
@@ -15,8 +17,14 @@ body
 }
 
 h2, h3 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
+}
+
+.date {
+  font-size:14px;
+  font-weight:500;
+  color:#353535;
 }
 
 .purple {
@@ -31,7 +39,7 @@ h2, h3 {
 
 .jumbotron p {
   font-size: 16px !important;
-  line-height: 24px !important;
+  line-height: 28px !important;
 }
 
 #intro

@@ -7,21 +7,14 @@ $(window).load(function () {
 });
 
 $(document).ready(function () {
-	$(".glyphicon").click(function (e) {
-		var picHeight = $("div.picture").height();
-		var navHeight = $(".navbar").height();
-		$("html,body").animate({
-			scrollTop: picHeight - navHeight
-		}, 1000, 'easeInOutCubic');
-	});
 
+	// set up smooth scrolling
  	$('.navbar a').on('click', function (e) {
  		console.log('yay');
 		e.preventDefault();
 		var divID = $(this).attr('href');
 		$(divID).scrollView();
   });
-
 });
 
 var windowDependent = function () {
@@ -35,13 +28,19 @@ var windowDependent = function () {
 
 	// resize
 	if(pictureImg.height() < windowHeight)
-		pictureDiv.height(pictureImg.height());
+		pictureDiv.height(pictureImg.height() - 50);
 	else pictureDiv.height(windowHeight);
 
-	// center & move
 	var toCenter = $(".text");
+
+	if(pictureDiv.width() < 650)
+		toCenter.width(pictureDiv.width()/2);
+	else
+		toCenter.width(500);
+
+	// center & move
 	var left = (pictureDiv.width() - toCenter.width())/2;
-	var top = (pictureDiv.height() - toCenter.height())/2.3;
+	var top = (pictureDiv.height() - (toCenter.height())+ $(".navbar").height())/2;
 	toCenter.css("left", left + "px");
 	toCenter.css("top", top + "px");
 	$(".wrapper").css("top", (pictureDiv.height() - 50) + "px");
