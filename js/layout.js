@@ -8,13 +8,20 @@ $(window).load(function () {
 
 $(document).ready(function () {
 	$(".glyphicon").click(function (e) {
-		console.log("hi")
 		var picHeight = $("div.picture").height();
-		var 	navHeight = $(".navbar").height();
+		var navHeight = $(".navbar").height();
 		$("html,body").animate({
 			scrollTop: picHeight - navHeight
 		}, 1000, 'easeInOutCubic');
 	});
+
+ 	$('.navbar a').on('click', function (e) {
+ 		console.log('yay');
+		e.preventDefault();
+		var divID = $(this).attr('href');
+		$(divID).scrollView();
+  });
+
 });
 
 var windowDependent = function () {
@@ -54,6 +61,13 @@ $(document).on('click','.navbar-collapse.in',function(e) {
     }
 });
 
+$.fn.scrollView = function () {
+  return this.each(function () {
+		$('html, body').animate({
+	    scrollTop: $(this).offset().top - $(".navbar").height()
+		}, 1000);
+  });
+};
 
 
 

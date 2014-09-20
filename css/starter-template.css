@@ -2,17 +2,36 @@ body
 {
   /*padding-top: 50px;*/
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 
 @media (min-width: 1200px)
 .container {
-  min-width:1100px;
+  min-width:900px;
+}
+
+.jumbotron h1 {
+  font-size: 30px;
+}
+
+h2, h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.purple {
+  color: #7A1DBA;
 }
 
 .jumbotron
 {
   padding: 80px 15px;
   background-color: white;
+}
+
+.jumbotron p {
+  font-size: 16px !important;
+  line-height: 24px !important;
 }
 
 #intro
@@ -29,7 +48,6 @@ body
 .navbar 
 {
   background-color:rgba(255,255,255,0.95);
-	border: 0;
 	border-bottom-width:0;
   border-color:#f3f3f3;
 }
@@ -53,7 +71,7 @@ body
 .navbar .nav > li > a:hover, .navbar-nav > .active > a:hover, .navbar .navbar-brand:hover 
 {
 	display: block;
-	color: #800080;
+	color: #7A1DBA;
 	text-decoration: none;
 }
 
@@ -72,7 +90,7 @@ body
 .navbar-header .navbar-toggle .icon-bar
 {
   /*background-color: #a3a3ff;*/
-  background-color: #800080;
+  background-color: #7A1DBA;
 }
 
 .navbar-header .navbar-toggle:hover .icon-bar
@@ -88,12 +106,12 @@ body
 
 .navbar-header .navbar-toggle:hover
 {
-  background-color: #800080;
+  background-color: #7A1DBA;
 }
 
 .navbar-header .navbar-toggle:focus
 {
-  background-color: #800080;
+  background-color: #7A1DBA;
 }
 
 .navbar-header .navbar-toggle:focus .icon-bar
@@ -103,7 +121,7 @@ body
 
 .dropdown-menu >li > a:hover
 {
-  color: #800080;
+  color: #7A1DBA;
   background-color: rgba(255,255,255,0.95);
 }
 
@@ -129,7 +147,7 @@ body {
 
 .featurette-divider {
   margin: 30px 0; /* Space out the Bootstrap <hr> more */
-  border: 1px solid #800080;
+  border: 1px solid #7A1DBA;
   opacity: 0.7;
 }
 
@@ -148,7 +166,7 @@ body {
 @media (min-width: 768px) {
 
   .featurette-heading {
-    font-size: 50px;
+    font-size: 30px;
   }
 }
 
@@ -203,11 +221,11 @@ img.text {
 }
 
 .purple-h2 {
-  color:#800080 !important;
+  color:#7A1DBA !important;
 }
 
 .purple-h1 {
-  color: #800080 !important;
+  color: #7A1DBA !important;
 }
 
 .wrapper {
@@ -244,8 +262,8 @@ img.text {
 
 .btn-subscribe
 {
-  border-color: #800080;
-  color: #800080;
+  border-color: #7A1DBA;
+  color: #7A1DBA;
 }
 
 .btn-subscribe:focus
@@ -255,7 +273,7 @@ img.text {
 
 .btn-subscribe:hover
 {
-  background-color: #800080;
+  background-color: #7A1DBA;
   color: white;
   border-color: white;
 }
@@ -268,7 +286,7 @@ img.text {
 .panel-title-link:hover, .caret-large:hover
 {
   text-decoration: none;
-  color: #800080;
+  color: #7A1DBA;
 }
 
 .panel {
@@ -303,12 +321,18 @@ img.text {
 /* -------------------------------------------------- */
 
 .container-personbox {
-  max-width:800px;
-  margin:0 auto;
+  max-width:900px;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.center-personbox {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .personbox {
-  margin:20px;
+  margin:40px;
   overflow:hidden;
   background-color:white;
   width:210px;
