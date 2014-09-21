@@ -332,6 +332,14 @@ img.text {
   margin-right: auto;
 }
 
+.personbox-link {
+  display: block;
+}
+
+.personbox-link:focus {
+  outline: 0;
+}
+
 .personbox {
   margin:40px;
   overflow:hidden;
