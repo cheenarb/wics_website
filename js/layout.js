@@ -8,8 +8,16 @@ $(window).load(function () {
 
 $(document).ready(function () {
 
+	$(".glyphicon").click(function (e) {
+ 		var picHeight = $("div.picture").height();
+		var navHeight = $(".navbar").height();
+ 		$("html,body").animate({
+ 			scrollTop: picHeight - navHeight
+ 		}, 1000, 'easeInOutCubic');
+ 	});
+
 	// set up smooth scrolling
- 	$('.navbar a').on('click', function (e) {
+ 	$('.navbar a, #page-footer a').on('click', function (e) {
  		console.log('yay');
 		e.preventDefault();
 		var divID = $(this).attr('href');

@@ -310,20 +310,17 @@ img.text {
   color: black;
 }
 
-/* Adjust some links for fixed navbar s/t top not hidden behind navbar */
-.adjusted-anchor
-{
-  display: block;
-  position: relative;
-  top: -100px;
-}
-
 .caret-large {
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-top: 6px solid #5a5a5a;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #5a5a5a;
 }
 
+.panel-title-link:hover .caret-large {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #7A1DBA;
+}
 
 
 /* -------------------------------------------------- */
@@ -378,4 +375,14 @@ img.text {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.4;
+}
+
+#page-footer {
+  padding: 0px; 
+}
+
+.panel {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
 }

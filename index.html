@@ -44,17 +44,16 @@
           <span class="icon-bar"></span>
         </button>
         <!-- <a class = "navbar-brand" href = "#"><img src = "img/wics_logo_tiny.png"/></a> -->
-        <a class = "navbar-brand" href = "#">WICS</a>
+        <a class = "navbar-brand" href = "#picture">WICS</a>
       </div>
 
       <div class = "collapse navbar-collapse" id = "main-header">
         <ul class = "nav navbar-nav navbar-right">
           <li><a href="#about" >ABOUT</a></li>
           <li><a href="#involved">GET INVOLVED</a></li>
-          <li><a href="#board">BOARD</a></li>
           <li><a href="#events">EVENTS</a></li>
           <li><a href="#industry">INDUSTRY</a></li>
-          <li class="dropdown">
+           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESOURCES <span class="caret"></span></a>
             <ul class="dropdown-menu dropdown-menu-right" role="menu">
               <li><a href="#resources">RESOURCES</a></li>
@@ -68,6 +67,7 @@
             $('#dropdown-workshops').click(function(){ $('#collapseThree').collapse("show"); return true; });
             </script>
           </li>
+          <li><a href="#board">BOARD</a></li> 
           <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
@@ -78,7 +78,7 @@
     <div class="overlay"></div>
     <!-- <img class="picture" id="banana" src="http://2.bp.blogspot.com/-Sv2Im2lZCLA/TsBqUZA6JPI/AAAAAAAAAAs/4TPzyybdPFU/s1600/Wall%2Bof%2BPost-its.jpg"></img> -->
     <img class = "picture" id = "banana" src = "img/postits.jpg"> </img>
-    <img class="text" src="img/stanfordwicswhite.png"></img>
+    <img class="text" src="img/stanfordwicswhite-compress.png"></img>
     <div class="wrapper">
       <div class="smalltitle"> 
         <span class="glyphicon glyphicon-chevron-down" id="downscroll"></span><!-- centered content goes here -->
@@ -114,13 +114,13 @@
         <br>
 
         <p class = "lead">
-          <a href= "https://mailman.stanford.edu/mailman/listinfo/wics_announce" target="_blank" class="btn btn-lg btn-default btn-subscribe">
+          <a href= "https://mailman.stanford.edu/mailman/listinfo/wics_announce" target="_blank" class="btn btn-sm btn-default btn-subscribe">
             SUBSCRIBE </a>
             to our main mailing list. 
           </p>
 
           <p class = "lead">
-            <a href= "https://mailman.stanford.edu/mailman/listinfo/wics-recruiting" target="_blank" class="btn btn-lg btn-default btn-subscribe">
+            <a href= "https://mailman.stanford.edu/mailman/listinfo/wics-recruiting" target="_blank" class="btn btn-sm btn-default btn-subscribe">
               SUBSCRIBE </a>
               to our recruiting mailing list. 
             </p>
@@ -333,7 +333,7 @@
               <h2 class="featurette-heading purple-h2">INDUSTRY</h2>
                 <br>
                 <p class = "lead"> If you are interested in sponsoring WiCS, please 
-                <a href = "mailto:wics-board@lists.stanford.edu" id = "contactPopover" data-placement="top" data-placementtrigger = "hover" rel = "popover">
+                <a href = "mailto:wics-board@lists.stanford.edu" id = "contactPopover" data-placement="top" data-trigger = "hover" rel = "popover">
                 e-mail the board
                 </a>    
                 and our Industry Relations Coordinator will get in touch with you with more details.
@@ -355,7 +355,7 @@
 
 
             <h2 class = "featurette-heading purple-h2"> RESOURCES </h2>
-            <a id = "campus-resources" class = "adjusted-anchor"> </a>
+            <a id = "campus-resources"> </a>
             <div class="panel-group" id="accordion">
               <div class="panel panel-default">
                 <div class="panel">
@@ -401,7 +401,7 @@
                   </div>
                 </div>
               </div>
-              <a id = "scholarships" class = "adjusted-anchor"> </a>
+              <a id = "scholarships"> </a>
               <div class="panel panel-default">
                 <div class="panel">
                   <h4 class="panel-title">
@@ -434,7 +434,7 @@
                  </div>
                </div>
              </div>
-             <a id = "workshops" class = "adjusted-anchor"> </a>
+             <a id = "workshops"> </a>
              <div class="panel panel-default">
               <div class="panel">
                 <h4 class="panel-title">
@@ -582,8 +582,8 @@
 
           <hr class="featurette-divider">
 
-          <footer>
-            <p class = "text-center"> &copy; 2014 Stanford University Women in Computer Science &middot; <a href = "#"> Back to top </a> </p>
+          <footer class = "jumbotron" id = "page-footer">
+               <p class = "text-center"> &copy; 2014 Stanford University Women in Computer Science &middot; <a href = "#picture"> Back to top </a> </p>
           </footer>
 
         </div> <!-- end container -->
