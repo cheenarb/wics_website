@@ -17,7 +17,7 @@ $(document).ready(function () {
  	});
 
 	// set up smooth scrolling
- 	$('.navbar a, #page-footer a').on('click', function (e) {
+ 	$('.navbar a, #page-footer a, #about-involved').on('click', function (e) {
  		console.log('yay');
 		e.preventDefault();
 		var divID = $(this).attr('href');
