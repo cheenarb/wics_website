@@ -97,14 +97,12 @@ h2, h3 {
 
 .navbar-header .navbar-toggle .icon-bar
 {
-  /*background-color: #a3a3ff;*/
   background-color: #7A1DBA;
 }
 
 .navbar-header .navbar-toggle:hover .icon-bar
 {
   background-color: #fff;
-  /*border-color: #A3A3FF;*/
 }
 
 .navbar-header .navbar-toggle
@@ -165,8 +163,6 @@ body {
   line-height: 1;
   letter-spacing: -1px;
 }
-
-
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
