@@ -1,6 +1,5 @@
 body
 {
-  /*padding-top: 50px;*/
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
@@ -66,14 +65,12 @@ h2, h3 {
 	font-size: 12px;
   font-weight:400;
 	color: black;
-/*	float: left; */
 	letter-spacing: 2px;
 	margin-right: 10px;
 	margin-left: 10px;
 	margin-top: 20px;
 	margin-bottom: 0px;
 	padding: 5px !important;
-  /*line-height: 12px;*/
 }
 
 .navbar .nav > li > a:hover, .navbar-nav > .active > a:hover, .navbar .navbar-brand:hover 
